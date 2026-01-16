@@ -99,13 +99,13 @@ h6 {
 }
 
 h1 {
-  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
 }
 h2 {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
 }
 h3 {
-  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-size: clamp(1rem, 1.75vw, 1.25rem);
 }
 
 p {
@@ -173,8 +173,8 @@ a:hover {
 }
 
 .btn-lg {
-  padding: var(--space-md) var(--space-xl);
-  font-size: 1.125rem;
+  padding: var(--space-xs) var(--space-md);
+  font-size: 0.95rem;
 }
 
 /* Navigation */
@@ -312,9 +312,9 @@ a:hover {
 }
 
 .hero-description {
-  font-size: 1.25rem;
-  margin-bottom: var(--space-lg);
-  max-width: 500px;
+  font-size: 1rem;
+  margin-bottom: var(--space-sm);
+  max-width: 450px;
 }
 
 .hero-buttons {
@@ -330,7 +330,7 @@ a:hover {
 
 .hero-image img {
   width: 100%;
-  max-width: 380px;
+  max-width: 280px;
   filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.4));
   animation: float 6s ease-in-out infinite;
 }

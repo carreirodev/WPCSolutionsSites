@@ -3,296 +3,208 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- SEO Meta Tags -->
-    <title>Final Renamer - Renomeação Inteligente de Arquivos com IA</title>
+    <title>WPC Solutions - Software & Game Development</title>
     <meta
       name="description"
-      content="Transforme a forma como você renomeia arquivos com Final Renamer – a ferramenta definitiva de renomeação em massa com inteligência artificial."
+      content="Desenvolvimento de aplicativos, games e websites de alta performance para Windows, Android e iOS. 10+ anos de experiência."
     />
-    <meta
-      name="keywords"
-      content="renomear arquivos, batch rename, renomeação em massa, IA, EXIF, metadados, fotos, músicas, organização de arquivos"
-    />
-    <meta name="author" content="WPC Solutions" />
-
-    <!-- Open Graph -->
-    <meta
-      property="og:title"
-      content="Final Renamer - Renomeação Inteligente de Arquivos"
-    />
-    <meta
-      property="og:description"
-      content="A ferramenta definitiva de renomeação em massa com IA. Organize fotos, músicas e documentos de forma inteligente."
-    />
-    <meta property="og:image" content="assets/icon.png" />
-    <meta property="og:type" content="website" />
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/icon.png" />
-
-    <!-- Styles -->
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/icon.png" />
+    <!-- Fallback, might want a specific WPC icon -->
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar">
       <div class="container nav-content">
-        <a href="#" class="nav-brand">
-          <img src="assets/icon.png" alt="Final Renamer Icon" />
-          <span>Final Renamer</span>
+        <a href="#" class="logo">
+          <img src="assets/WPChorizWhite.svg" alt="WPC Solutions" />
         </a>
-
-        <div class="nav-toggle" id="navToggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-
-        <ul class="nav-links" id="navLinks">
-          <li><a href="#features">Recursos</a></li>
-          <li><a href="#how-it-works">Como Funciona</a></li>
-          <li><a href="#download">Download</a></li>
+        <ul class="nav-links">
+          <li><a href="#services">Serviços</a></li>
+          <li><a href="#about">Sobre Nós</a></li>
+          <li><a href="finalrenamer/index.html">Final Renamer</a></li>
+          <li><a href="#contact" class="btn-contact">Contato</a></li>
         </ul>
       </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="hero">
-      <div class="container hero-content">
-        <div class="hero-text">
-          <div class="hero-badge">
-            <span>✨</span>
-            <span>Powered by AI</span>
-          </div>
-
-          <h1 class="hero-title">
-            Renomeie arquivos com <span class="highlight">inteligência</span>
-          </h1>
-
-          <p class="hero-description">
-            Transforme a forma como você organiza arquivos. O Final Renamer usa
-            inteligência artificial para sugerir nomes inteligentes e
-            automatizar a renomeação em massa.
-          </p>
-
-          <div class="hero-buttons">
-            <a
-              href="https://apps.microsoft.com/detail/9nx739bh6hv8?hl=pt-BR&gl=BR"
-              class="btn btn-primary btn-lg"
-              target="_blank"
-            >
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path
-                  d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"
-                />
-              </svg>
-              Baixar na Microsoft Store
-            </a>
-
-            <a href="#features" class="btn btn-secondary btn-lg">
-              Ver Recursos
-            </a>
-          </div>
-        </div>
-
-        <div class="hero-image">
-          <img src="assets/icon.png" alt="Final Renamer App" />
-        </div>
-      </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features" id="features">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-subtitle">Recursos Poderosos</p>
-          <h2 class="section-title">
-            Tudo que você precisa para organizar seus arquivos
-          </h2>
-          <p class="section-description">
-            Do básico ao avançado, o Final Renamer oferece ferramentas completas
-            para qualquer necessidade de renomeação.
-          </p>
-        </div>
-
-        <div class="features-grid">
-          <!-- Feature 1: AI -->
-          <div class="feature-card reveal">
-            <div class="feature-icon">🤖</div>
-            <h3 class="feature-title">Renomeação com IA</h3>
-            <p class="feature-description">
-              Deixe a inteligência artificial analisar seus arquivos e sugerir
-              nomes semânticos e organizados automaticamente. Suporte para
-              modelos locais via Ollama para total privacidade.
-            </p>
-          </div>
-
-          <!-- Feature 2: Photos -->
-          <div class="feature-card reveal">
-            <div class="feature-icon">📸</div>
-            <h3 class="feature-title">Metadados EXIF</h3>
-            <p class="feature-description">
-              Renomeie fotos usando dados embutidos: modelo da câmera, data de
-              captura, localização GPS e muito mais.
-            </p>
-          </div>
-
-          <!-- Feature 3: Music -->
-          <div class="feature-card reveal">
-            <div class="feature-icon">🎵</div>
-            <h3 class="feature-title">Tags de Música</h3>
-            <p class="feature-description">
-              Organize sua biblioteca musical renomeando arquivos pelo artista,
-              álbum, título e número da faixa.
-            </p>
-          </div>
-
-          <!-- Feature 4: Date -->
-          <div class="feature-card reveal">
-            <div class="feature-icon">📅</div>
-            <h3 class="feature-title">Formatação de Datas</h3>
-            <p class="feature-description">
-              Insira datas de criação, modificação ou formatos personalizados
-              nos nomes dos seus arquivos.
-            </p>
-          </div>
-
-          <!-- Feature 5: Numbering -->
-          <div class="feature-card reveal">
-            <div class="feature-icon">🔢</div>
-            <h3 class="feature-title">Numeração Inteligente</h3>
-            <p class="feature-description">
-              Adicione sequências numéricas com padding, prefixos, sufixos e
-              incrementos totalmente customizáveis.
-            </p>
-          </div>
-
-          <!-- Feature 6: Text -->
-          <div class="feature-card reveal">
-            <div class="feature-icon">✏️</div>
-            <h3 class="feature-title">Operações de Texto</h3>
-            <p class="feature-description">
-              Substitua, insira, remova ou transforme qualquer texto nos nomes
-              com poderosas opções de edição.
-            </p>
-          </div>
-
-          <!-- Feature 7: Preview -->
-          <div class="feature-card reveal">
-            <div class="feature-icon">⚡</div>
-            <h3 class="feature-title">Preview em Tempo Real</h3>
-            <p class="feature-description">
-              Veja exatamente como seus arquivos serão renomeados antes de
-              aplicar qualquer mudança.
-            </p>
-          </div>
-
-          <!-- Feature 8: Drag & Drop -->
-          <div class="feature-card reveal">
-            <div class="feature-icon">🎯</div>
-            <h3 class="feature-title">Drag & Drop</h3>
-            <p class="feature-description">
-              Arraste e solte arquivos ou pastas para começar instantaneamente.
-              Interface moderna e intuitiva.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- How It Works Section -->
-    <section class="how-it-works" id="how-it-works">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-subtitle">Simples & Rápido</p>
-          <h2 class="section-title">Como funciona</h2>
-          <p class="section-description">
-            Renomeie centenas de arquivos em apenas 3 passos simples.
-          </p>
-        </div>
-
-        <div class="steps-grid">
-          <div class="step-card reveal">
-            <div class="step-number">1</div>
-            <h3 class="step-title">Arraste seus arquivos</h3>
-            <p>
-              Arraste e solte arquivos ou pastas diretamente na interface do
-              app.
-            </p>
-            <div class="step-connector"></div>
-          </div>
-
-          <div class="step-card reveal">
-            <div class="step-number">2</div>
-            <h3 class="step-title">Configure as regras</h3>
-            <p>
-              Escolha entre dezenas de opções de renomeação ou deixe a IA
-              decidir.
-            </p>
-            <div class="step-connector"></div>
-          </div>
-
-          <div class="step-card reveal">
-            <div class="step-number">3</div>
-            <h3 class="step-title">Aplique as mudanças</h3>
-            <p>
-              Visualize o resultado e aplique. Todos os seus arquivos renomeados
-              em segundos!
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section" id="download">
-      <div class="container cta-content reveal">
-        <h2 class="cta-title">Pronto para organizar seus arquivos?</h2>
-        <p class="cta-description">
-          Baixe gratuitamente o Final Renamer na Microsoft Store e comece a
-          renomear de forma inteligente hoje mesmo.
+    <section class="hero">
+      <img
+        src="assets/wpc-hero-bg.png"
+        alt="Technology Background"
+        class="hero-bg"
+      />
+      <div class="container hero-content reveal">
+        <span class="hero-tag">FUTURE OF DEVELOPMENT</span>
+        <h1 class="hero-title">
+          Transformando Ideias em<br />Realidade Digital
+        </h1>
+        <p class="hero-subtitle">
+          Especialistas em desenvolvimento de software de alta performance,
+          games imersivos e soluções web inovadoras.
         </p>
+        <a href="#contact" class="btn-primary">Inicie seu Projeto</a>
+      </div>
+    </section>
 
-        <div class="cta-buttons">
-          <a
-            href="https://apps.microsoft.com/detail/9nx739bh6hv8?hl=pt-BR&gl=BR"
-            class="ms-store-badge"
-            target="_blank"
-          >
-            <img src="assets/DFTMS.png" alt="Disponível na Microsoft Store" />
-          </a>
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title">Nossas <span>Soluções</span></h2>
+          <p>Tecnologia de ponta para todas as plataformas.</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card reveal delay-100">
+            <div class="service-icon">
+              <img src="assets/wpc-icon-mobile.png" alt="Mobile Development" />
+            </div>
+            <h3>Apps Mobile</h3>
+            <p>
+              Desenvolvimento nativo e híbrido para iOS e Android. Apps fluidos,
+              intuitivos e otimizados para a melhor experiência do usuário.
+            </p>
+          </div>
+
+          <div class="service-card reveal delay-200">
+            <div class="service-icon">
+              <img src="assets/wpc-icon-game.png" alt="Game Development" />
+            </div>
+            <h3>Game Development</h3>
+            <p>
+              Criação de jogos 2D e 3D envolventes para PC e Mobile.
+              Experiências interativas com gráficos de alta qualidade e gameplay
+              viciante.
+            </p>
+          </div>
+
+          <div class="service-card reveal delay-300">
+            <div class="service-icon">
+              <img src="assets/wpc-icon-web.png" alt="Web Development" />
+            </div>
+            <h3>Websites Modernos</h3>
+            <p>
+              Sites corporativos, landing pages e aplicações web completas.
+              Design responsivo, rápido e focado em conversão.
+            </p>
+          </div>
+
+          <div class="service-card reveal delay-100">
+            <div class="service-icon">
+              <img src="assets/wpc-icon-dev.png" alt="Windows Software" />
+            </div>
+            <h3>Software Windows</h3>
+            <p>
+              Ferramentas poderosas para desktop. Soluções robustas como o
+              <a
+                href="finalrenamer/index.html"
+                style="color: var(--text-accent)"
+                >Final Renamer</a
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container about-content">
+        <div class="about-text reveal">
+          <h2>Impulsionando a Inovação desde 2015</h2>
+          <p>
+            A WPC Solutions é uma empresa de desenvolvimento de software fundada
+            nos Estados Unidos, com uma trajetória de mais de uma década criando
+            soluções digitais impactantes.
+          </p>
+          <p>
+            Utilizamos tecnologias modernas e metodologias ágeis para entregar
+            projetos personalizados que superam expectativas. Nossa paixão é
+            codificar o futuro.
+          </p>
+
+          <div class="stats">
+            <div class="stat-item">
+              <h4>10+</h4>
+              <p>Anos de Experiência</p>
+            </div>
+            <div class="stat-item">
+              <h4>2015</h4>
+              <p>Fundação nos EUA</p>
+            </div>
+            <div class="stat-item">
+              <h4>100%</h4>
+              <p>Foco em Qualidade</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-image reveal delay-200">
+          <img src="assets/wpc-about-illustration.png" alt="Innovation Team" />
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-      <div class="container footer-content">
-        <div class="footer-brand">
-          <img src="assets/WPChorizWhite.svg" alt="WPC Solutions" />
-          <p class="footer-text">
-            © 2025 WPC Solutions. Todos os direitos reservados.
-          </p>
+    <footer id="contact">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="assets/WPChorizWhite.svg" alt="WPC Solutions" />
+            <p style="color: #666; max-width: 300px; margin-top: 10px">
+              Desenvolvendo o futuro, uma linha de código por vez.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="#about">Sobre Nós</a></li>
+              <li><a href="#services">Serviços</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Produtos</h4>
+            <ul>
+              <li><a href="finalrenamer/index.html">Final Renamer</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Conecte-se</h4>
+            <ul>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Email</a></li>
+            </ul>
+          </div>
         </div>
-
-        <div class="footer-links">
-          <a
-            href="https://apps.microsoft.com/detail/9nx739bh6hv8"
-            target="_blank"
-            >Microsoft Store</a
-          >
-          <a href="https://github.com/carreirodev" target="_blank">GitHub</a>
+        <div class="copyright">
+          &copy; 2026 WPC Solutions. Todos os direitos reservados.
         </div>
       </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+    <script>
+      // Simple Reveal Animation on Scroll
+      window.addEventListener("scroll", reveal);
+
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          }
+        }
+      }
+
+      // Trigger once on load
+      reveal();
+    </script>
   </body>
 </html>

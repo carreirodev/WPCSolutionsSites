@@ -146,8 +146,74 @@
       </div>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container contact-container">
+        <div class="section-header reveal">
+          <h2 class="section-title">Entre em <span>Contato</span></h2>
+          <p>Tem alguma ideia ou projeto? Vamos conversar.</p>
+        </div>
+
+        <form
+          action="mailto:contact@wpcsolutions.com.br"
+          method="post"
+          enctype="text/plain"
+          class="contact-form reveal delay-100"
+        >
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-control"
+              placeholder="Seu nome completo"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              placeholder="seu@email.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Assunto</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              class="form-control"
+              placeholder="Sobre o que vamos falar?"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea
+              id="message"
+              name="message"
+              class="form-control"
+              placeholder="Descreva seu projeto ou dúvida..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Enviar Mensagem</button>
+        </form>
+      </div>
+    </section>
+
     <!-- Footer -->
-    <footer id="contact">
+    <footer>
       <div class="container">
         <div class="footer-content">
           <div class="footer-logo">
@@ -173,9 +239,12 @@
           <div class="footer-links">
             <h4>Conecte-se</h4>
             <ul>
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="#">GitHub</a></li>
-              <li><a href="#">Email</a></li>
+              <li>
+                <a href="https://github.com/carreirodev" target="_blank"
+                  >GitHub</a
+                >
+              </li>
+              <li><a href="mailto:contact@wpcsolutions.com.br">Email</a></li>
             </ul>
           </div>
         </div>

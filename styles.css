@@ -250,6 +250,7 @@ a {
   line-height: 1.1;
   margin-bottom: 25px;
   background: linear-gradient(to right, #ffffff, #b0b0b0);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -319,8 +320,16 @@ a {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .service-card {
@@ -405,6 +414,94 @@ a {
   border-radius: 20px;
   box-shadow: 0 0 50px rgba(0, 243, 255, 0.1);
   animation: float 6s ease-in-out infinite;
+}
+
+/* Contact Form */
+.contact {
+  padding: var(--section-padding) 0;
+  background: var(--bg-dark);
+}
+
+.contact-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  background: rgba(255, 255, 255, 0.05); /* Slightly lighter */
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid var(--border-light);
+  backdrop-filter: blur(10px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  margin-bottom: 0; /* Managed by grid gap */
+}
+
+/* Make Subject, Message, and Button span full width */
+.form-group:nth-child(3),
+.form-group:nth-child(4),
+.btn-submit {
+  grid-column: span 2;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #cccccc; /* Lighter text */
+  font-size: 0.95rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.05); /* Lighter input background */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.form-control:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--primary-glow);
+  box-shadow: 0 0 10px rgba(0, 243, 255, 0.1);
+}
+
+textarea.form-control {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(
+    90deg,
+    var(--secondary-glow),
+    var(--primary-glow)
+  );
+  border: none;
+  border-radius: 8px;
+  color: #000;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(0, 243, 255, 0.4);
 }
 
 /* Footer */

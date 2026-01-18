@@ -69,6 +69,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 html {
@@ -475,6 +477,19 @@ a:hover {
   }
 }
 
+/* Intermediate breakpoint for tablets */
+@media (max-width: 800px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card,
+  .feature-card:nth-child(7),
+  .feature-card:nth-child(8) {
+    grid-column: span 1;
+  }
+}
+
 @media (max-width: 600px) {
   .features-grid {
     grid-template-columns: 1fr;
@@ -751,5 +766,58 @@ a:hover {
   .btn-lg {
     width: 100%;
     max-width: 300px;
+  }
+
+  /* Navigation brand overflow fix */
+  .nav-brand span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+  }
+
+  /* CTA text size reduction */
+  .cta-title {
+    font-size: 1.75rem;
+  }
+
+  .cta-description {
+    font-size: 1rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 600px) {
+  .container {
+    padding: 0 var(--space-sm);
+  }
+
+  .hero-title {
+    font-size: 1.75rem;
+  }
+
+  .hero-description {
+    font-size: 0.9375rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .cta-title {
+    font-size: 1.5rem;
+  }
+
+  .cta-description {
+    font-size: 0.9375rem;
   }
 }

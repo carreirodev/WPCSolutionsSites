@@ -2,9 +2,6 @@
    Final Renamer Website - Design System
    ============================================ */
 
-/* Import Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
-
 /* CSS Custom Properties */
 :root {
   /* Colors - Deep Blue Theme */
@@ -332,6 +329,9 @@ a:hover {
 
 .hero-image img {
   width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
   max-width: 280px;
   filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.4));
   animation: float 6s ease-in-out infinite;
@@ -357,6 +357,45 @@ a:hover {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.trust {
+  padding: var(--space-2xl) 0;
+  background: var(--color-bg-primary);
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+.trust-card {
+  padding: var(--space-lg);
+  background: var(--gradient-card);
+  border: 1px solid rgba(77, 171, 247, 0.12);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+}
+
+.trust-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(77, 171, 247, 0.3);
+  box-shadow: var(--shadow-lg), var(--shadow-glow);
+}
+
+.trust-title {
+  margin-bottom: var(--space-xs);
+  color: var(--color-text-primary);
+  font-size: 1.125rem;
+}
+
+.trust-text {
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
 }
 
 /* Features Section */
@@ -548,6 +587,52 @@ a:hover {
 
 .step-card:last-child .step-connector {
   display: none;
+}
+
+.faq {
+  padding: var(--space-2xl) 0;
+  background: var(--color-bg-secondary);
+}
+
+.faq-list {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  gap: var(--space-md);
+}
+
+.faq-item {
+  background: var(--gradient-card);
+  border: 1px solid rgba(77, 171, 247, 0.12);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md) var(--space-lg);
+}
+
+.faq-item summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  float: right;
+  color: var(--color-accent-primary);
+}
+
+.faq-item[open] summary::after {
+  content: "–";
+}
+
+.faq-answer {
+  margin-top: var(--space-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.7;
 }
 
 /* CTA Section */

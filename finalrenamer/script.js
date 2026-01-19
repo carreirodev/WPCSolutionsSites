@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Smooth Scroll for Anchor Links
   initSmoothScroll();
+
+  initTracking();
 });
 
 /**
@@ -113,6 +115,30 @@ function initSmoothScroll() {
           behavior: "smooth",
         });
       }
+    });
+  });
+}
+
+function initTracking() {
+  const trackables = document.querySelectorAll("[data-track]");
+  if (!trackables.length) return;
+
+  const emit = (eventName, detail) => {
+    const payload = { event: eventName, ...detail };
+    if (Array.isArray(window.dataLayer)) {
+      window.dataLayer.push(payload);
+      return;
+    }
+    window.dispatchEvent(new CustomEvent(eventName, { detail: payload }));
+  };
+
+  trackables.forEach((el) => {
+    el.addEventListener("click", () => {
+      emit("finalrenamer_click", {
+        tag: el.getAttribute("data-track"),
+        href: el.getAttribute("href") || null,
+        page: window.location.pathname || "/finalrenamer/",
+      });
     });
   });
 }

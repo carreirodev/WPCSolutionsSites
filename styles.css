@@ -2,9 +2,6 @@
    WPC Solutions - Corporate Design System
    ============================================ */
 
-/* Import Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap");
-
 :root {
   /* Colors */
   --bg-dark: #050505;
@@ -111,17 +108,25 @@ a {
 
 .reveal {
   opacity: 0;
-  animation: fadeUp 1s ease forwards;
+  transform: translateY(30px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .delay-100 {
-  animation-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 .delay-200 {
-  animation-delay: 0.2s;
+  transition-delay: 0.2s;
 }
 .delay-300 {
-  animation-delay: 0.3s;
+  transition-delay: 0.3s;
 }
 
 /* Navbar */
@@ -144,6 +149,36 @@ a {
 
 .logo img {
   height: 40px;
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid var(--border-light);
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 8px;
+}
+
+.nav-toggle span {
+  width: 24px;
+  height: 2px;
+  background: var(--text-primary);
+  transition: 0.25s;
+}
+
+.nav-toggle.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 .nav-links {
@@ -202,6 +237,55 @@ a {
   position: relative;
   background: var(--grad-hero);
   overflow: hidden;
+}
+
+.hero.hero-sm {
+  height: 70vh;
+  min-height: 520px;
+}
+
+.page-section {
+  padding: var(--section-padding) 0;
+  background: var(--bg-dark);
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.page-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  padding: 28px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.page-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-glow);
+  transform: translateY(-6px);
+}
+
+.page-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.page-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.page-card a {
+  color: var(--text-accent);
+}
+
+.page-card a:hover {
+  color: var(--text-primary);
 }
 
 .hero-bg {
@@ -414,6 +498,9 @@ a {
 
 .about-image img {
   width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
   border-radius: 20px;
   box-shadow: 0 0 50px rgba(0, 243, 255, 0.1);
   animation: float 6s ease-in-out infinite;
@@ -438,6 +525,12 @@ a {
   backdrop-filter: blur(10px);
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "name message"
+    "email message"
+    "subject message"
+    "button button";
+  align-items: stretch;
   gap: 20px;
 }
 
@@ -445,11 +538,29 @@ a {
   margin-bottom: 0; /* Managed by grid gap */
 }
 
-/* Make Subject, Message, and Button span full width */
-.form-group:nth-child(3),
-.form-group:nth-child(4),
-.btn-submit {
-  grid-column: span 2;
+.form-name {
+  grid-area: name;
+}
+
+.form-email {
+  grid-area: email;
+}
+
+.form-subject {
+  grid-area: subject;
+}
+
+.form-message {
+  grid-area: message;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.form-message textarea.form-control {
+  flex: 1;
+  min-height: 0;
+  resize: none;
 }
 
 .form-group label {
@@ -484,6 +595,7 @@ textarea.form-control {
 }
 
 .btn-submit {
+  grid-area: button;
   width: 100%;
   padding: 15px;
   background: linear-gradient(
@@ -553,15 +665,46 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .page-grid {
+    grid-template-columns: 1fr;
+  }
+
   .hero-title {
     font-size: 2.2rem;
   }
   .about-content {
     grid-template-columns: 1fr;
   }
+  .nav-toggle {
+    display: flex;
+  }
+
   .nav-links {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 20px;
+    background: rgba(5, 5, 5, 0.98);
+    border-bottom: 1px solid var(--border-light);
+    transform: translateY(-120%);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.25s;
+  }
+
+  .nav-links.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-links a::after {
     display: none;
-  } /* Mobile menu simplified for now */
+  }
 
   /* Footer responsive */
   .footer-content {
@@ -578,12 +721,17 @@ footer {
   /* Contact form responsive */
   .contact-form {
     grid-template-columns: 1fr;
+    grid-template-areas:
+      "name"
+      "email"
+      "subject"
+      "message"
+      "button";
   }
 
-  .form-group:nth-child(3),
-  .form-group:nth-child(4),
-  .btn-submit {
-    grid-column: span 1;
+  .form-message textarea.form-control {
+    min-height: 150px;
+    resize: vertical;
   }
 
   /* Stats responsive */

@@ -8,20 +8,84 @@
       name="description"
       content="Desenvolvimento de aplicativos, games e websites de alta performance para Windows, Android e iOS. 10+ anos de experiência."
     />
+    <link rel="canonical" href="https://wpcsolutions.com.br/" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="WPC Solutions" />
+    <meta
+      property="og:title"
+      content="WPC Solutions - Software & Game Development"
+    />
+    <meta
+      property="og:description"
+      content="Desenvolvimento de aplicativos, games e websites de alta performance para Windows, Android e iOS. 10+ anos de experiência."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wpcsolutions.com.br/" />
+    <meta
+      property="og:image"
+      content="https://wpcsolutions.com.br/assets/wpc-hero-bg.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="WPC Solutions - Software & Game Development"
+    />
+    <meta
+      name="twitter:description"
+      content="Desenvolvimento de aplicativos, games e websites de alta performance para Windows, Android e iOS. 10+ anos de experiência."
+    />
+    <meta
+      name="twitter:image"
+      content="https://wpcsolutions.com.br/assets/wpc-hero-bg.png"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "WPC Solutions",
+        "url": "https://wpcsolutions.com.br/",
+        "logo": "https://wpcsolutions.com.br/assets/WPCvertWhite.svg",
+        "sameAs": ["https://github.com/carreirodev"]
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/svg+xml" href="assets/icon.png" />
-    <!-- Fallback, might want a specific WPC icon -->
+    <link rel="icon" type="image/svg+xml" href="assets/WPCvertWhite.svg" />
   </head>
   <body>
     <!-- Navigation -->
     <nav class="navbar">
       <div class="container nav-content">
         <a href="#" class="logo">
-          <img src="assets/WPChorizWhite.svg" alt="WPC Solutions" />
+          <img
+            src="assets/WPChorizWhite.svg"
+            alt="WPC Solutions"
+            width="240"
+            height="40"
+            decoding="async"
+          />
         </a>
-        <ul class="nav-links">
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          type="button"
+          aria-label="Abrir menu"
+          aria-controls="navLinks"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
           <li><a href="#services">Serviços</a></li>
           <li><a href="#about">Sobre Nós</a></li>
+          <li><a href="portfolio/index.html">Portfólio</a></li>
           <li><a href="finalrenamer/index.html">Final Renamer</a></li>
           <li><a href="#contact" class="btn-contact">Contato</a></li>
         </ul>
@@ -34,6 +98,10 @@
         src="assets/wpc-hero-bg.png"
         alt="Technology Background"
         class="hero-bg"
+        width="1024"
+        height="1024"
+        decoding="async"
+        fetchpriority="high"
       />
       <div class="container hero-content reveal">
         <span class="hero-tag">FUTURE OF DEVELOPMENT</span>
@@ -59,41 +127,84 @@
         <div class="services-grid">
           <div class="service-card reveal delay-100">
             <div class="service-icon">
-              <img src="assets/wpc-icon-mobile.png" alt="Mobile Development" />
+              <img
+                src="assets/wpc-icon-mobile.png"
+                alt="Mobile Development"
+                width="1024"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <h3>Apps Mobile</h3>
             <p>
               Desenvolvimento nativo e híbrido para iOS e Android. Apps fluidos,
               intuitivos e otimizados para a melhor experiência do usuário.
+              <a
+                href="services/apps-mobile.html"
+                style="color: var(--text-accent)"
+                >Saiba mais</a
+              >.
             </p>
           </div>
 
           <div class="service-card reveal delay-200">
             <div class="service-icon">
-              <img src="assets/wpc-icon-game.png" alt="Game Development" />
+              <img
+                src="assets/wpc-icon-game.png"
+                alt="Game Development"
+                width="1024"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <h3>Game Development</h3>
             <p>
               Criação de jogos 2D e 3D envolventes para PC e Mobile.
               Experiências interativas com gráficos de alta qualidade e gameplay
               viciante.
+              <a
+                href="services/game-development.html"
+                style="color: var(--text-accent)"
+                >Saiba mais</a
+              >.
             </p>
           </div>
 
           <div class="service-card reveal delay-300">
             <div class="service-icon">
-              <img src="assets/wpc-icon-web.png" alt="Web Development" />
+              <img
+                src="assets/wpc-icon-web.png"
+                alt="Web Development"
+                width="1024"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <h3>Websites Modernos</h3>
             <p>
               Sites corporativos, landing pages e aplicações web completas.
               Design responsivo, rápido e focado em conversão.
+              <a
+                href="services/websites-modernos.html"
+                style="color: var(--text-accent)"
+                >Saiba mais</a
+              >.
             </p>
           </div>
 
           <div class="service-card reveal delay-100">
             <div class="service-icon">
-              <img src="assets/wpc-icon-dev.png" alt="Windows Software" />
+              <img
+                src="assets/wpc-icon-dev.png"
+                alt="Windows Software"
+                width="1024"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <h3>Software Windows</h3>
             <p>
@@ -102,6 +213,11 @@
                 href="finalrenamer/index.html"
                 style="color: var(--text-accent)"
                 >Final Renamer</a
+              >.
+              <a
+                href="services/software-windows.html"
+                style="color: var(--text-accent)"
+                >Saiba mais</a
               >.
             </p>
           </div>
@@ -141,7 +257,14 @@
           </div>
         </div>
         <div class="about-image reveal delay-200">
-          <img src="assets/wpc-about-illustration.png" alt="Innovation Team" />
+          <img
+            src="assets/wpc-about-illustration.png"
+            alt="Innovation Team"
+            width="1024"
+            height="1024"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
       </div>
     </section>
@@ -155,12 +278,31 @@
         </div>
 
         <form
-          action="mailto:contact@wpcsolutions.com.br"
+          action="https://formsubmit.co/contact@wpcsolutions.com.br"
           method="post"
-          enctype="text/plain"
           class="contact-form reveal delay-100"
+          id="contactForm"
         >
-          <div class="form-group">
+          <input
+            type="text"
+            name="_honey"
+            style="display: none"
+            tabindex="-1"
+            autocomplete="off"
+          />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://wpcsolutions.com.br/obrigado.html"
+          />
+          <input
+            type="hidden"
+            name="_subject"
+            value="Novo contato via site - WPC Solutions"
+          />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <div class="form-group form-name">
             <label for="name">Nome</label>
             <input
               type="text"
@@ -168,11 +310,12 @@
               name="name"
               class="form-control"
               placeholder="Seu nome completo"
+              autocomplete="name"
               required
             />
           </div>
 
-          <div class="form-group">
+          <div class="form-group form-email">
             <label for="email">E-mail</label>
             <input
               type="email"
@@ -180,11 +323,12 @@
               name="email"
               class="form-control"
               placeholder="seu@email.com"
+              autocomplete="email"
               required
             />
           </div>
 
-          <div class="form-group">
+          <div class="form-group form-subject">
             <label for="subject">Assunto</label>
             <input
               type="text"
@@ -196,7 +340,7 @@
             />
           </div>
 
-          <div class="form-group">
+          <div class="form-group form-message">
             <label for="message">Mensagem</label>
             <textarea
               id="message"
@@ -227,6 +371,7 @@
             <ul>
               <li><a href="#about">Sobre Nós</a></li>
               <li><a href="#services">Serviços</a></li>
+              <li><a href="portfolio/index.html">Portfólio</a></li>
               <li><a href="#contact">Contato</a></li>
             </ul>
           </div>
@@ -240,7 +385,10 @@
             <h4>Conecte-se</h4>
             <ul>
               <li>
-                <a href="https://github.com/carreirodev" target="_blank"
+                <a
+                  href="https://github.com/carreirodev"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   >GitHub</a
                 >
               </li>
@@ -254,26 +402,6 @@
       </div>
     </footer>
 
-    <script>
-      // Simple Reveal Animation on Scroll
-      window.addEventListener("scroll", reveal);
-
-      function reveal() {
-        var reveals = document.querySelectorAll(".reveal");
-
-        for (var i = 0; i < reveals.length; i++) {
-          var windowHeight = window.innerHeight;
-          var elementTop = reveals[i].getBoundingClientRect().top;
-          var elementVisible = 150;
-
-          if (elementTop < windowHeight - elementVisible) {
-            reveals[i].classList.add("active");
-          }
-        }
-      }
-
-      // Trigger once on load
-      reveal();
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>

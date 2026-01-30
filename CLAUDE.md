@@ -63,3 +63,16 @@ This project has **no build system, no package.json, and no test framework**.
 - Contact form uses FormSubmit.co service (redirects to obrigado.html)
 - Form tracking pushes to `dataLayer` or dispatches custom events
 - Mobile nav toggle with hamburger menu pattern
+
+## Extended Documentation
+
+For detailed documentation, see `.context/docs/`:
+
+- [Project Overview](.context/docs/project-overview.md)
+- [Architecture Notes](.context/docs/architecture.md)
+- [Development Workflow](.context/docs/development-workflow.md)
+- [Testing Strategy](.context/docs/testing-strategy.md)
+- [Glossary](.context/docs/glossary.md)
+- [Data Flow](.context/docs/data-flow.md)
+- [Security](.context/docs/security.md)
+- [Tooling](.context/docs/tooling.md)

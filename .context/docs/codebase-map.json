@@ -1,0 +1,200 @@
+{
+  "version": "1.0.0",
+  "generated": "2026-01-30T04:49:56.749Z",
+  "stack": {
+    "primaryLanguage": "javascript",
+    "languages": [
+      "javascript"
+    ],
+    "frameworks": [],
+    "buildTools": [],
+    "testFrameworks": [],
+    "packageManager": null,
+    "isMonorepo": false,
+    "hasDocker": false,
+    "hasCI": false
+  },
+  "structure": {
+    "totalFiles": 34,
+    "topDirectories": [
+      {
+        "name": "assets",
+        "fileCount": 8
+      },
+      {
+        "name": "CLAUDE.md",
+        "fileCount": 1
+      },
+      {
+        "name": "finalrenamer",
+        "fileCount": 6
+      },
+      {
+        "name": "index.html",
+        "fileCount": 1
+      },
+      {
+        "name": "LICENSE",
+        "fileCount": 1
+      },
+      {
+        "name": "main.js",
+        "fileCount": 1
+      },
+      {
+        "name": "obrigado.html",
+        "fileCount": 1
+      },
+      {
+        "name": "portfolio",
+        "fileCount": 1
+      },
+      {
+        "name": "reports",
+        "fileCount": 7
+      },
+      {
+        "name": "robots.txt",
+        "fileCount": 1
+      },
+      {
+        "name": "services",
+        "fileCount": 4
+      },
+      {
+        "name": "sitemap.xml",
+        "fileCount": 1
+      },
+      {
+        "name": "styles.css",
+        "fileCount": 1
+      }
+    ],
+    "languageDistribution": [
+      {
+        "extension": ".html",
+        "count": 8
+      },
+      {
+        "extension": ".png",
+        "count": 8
+      },
+      {
+        "extension": ".json",
+        "count": 6
+      },
+      {
+        "extension": ".js",
+        "count": 2
+      },
+      {
+        "extension": ".md",
+        "count": 2
+      },
+      {
+        "extension": ".css",
+        "count": 2
+      },
+      {
+        "extension": ".svg",
+        "count": 2
+      },
+      {
+        "extension": ".txt",
+        "count": 1
+      },
+      {
+        "extension": ".xml",
+        "count": 1
+      },
+      {
+        "extension": ".jpg",
+        "count": 1
+      }
+    ]
+  },
+  "architecture": {
+    "layers": [],
+    "patterns": [],
+    "entryPoints": [
+      "main.js"
+    ]
+  },
+  "symbols": {
+    "classes": [],
+    "interfaces": [],
+    "functions": [
+      {
+        "name": "initContactFormTracking",
+        "kind": "function",
+        "file": "main.js",
+        "line": 63,
+        "exported": false
+      },
+      {
+        "name": "initMobileNav",
+        "kind": "function",
+        "file": "main.js",
+        "line": 7,
+        "exported": false
+      },
+      {
+        "name": "initMobileNav",
+        "kind": "function",
+        "file": "finalrenamer\\script.js",
+        "line": 24,
+        "exported": false,
+        "description": "Mobile Navigation Toggle"
+      },
+      {
+        "name": "initNavbarScroll",
+        "kind": "function",
+        "file": "finalrenamer\\script.js",
+        "line": 47,
+        "exported": false,
+        "description": "Navbar Scroll Effect"
+      },
+      {
+        "name": "initScrollReveal",
+        "kind": "function",
+        "file": "main.js",
+        "line": 45,
+        "exported": false
+      },
+      {
+        "name": "initScrollReveal",
+        "kind": "function",
+        "file": "finalrenamer\\script.js",
+        "line": 64,
+        "exported": false,
+        "description": "Scroll Reveal Animations using Intersection Observer"
+      },
+      {
+        "name": "initSmoothScroll",
+        "kind": "function",
+        "file": "finalrenamer\\script.js",
+        "line": 97,
+        "exported": false,
+        "description": "Smooth Scroll for Anchor Links"
+      },
+      {
+        "name": "initTracking",
+        "kind": "function",
+        "file": "finalrenamer\\script.js",
+        "line": 122,
+        "exported": false
+      }
+    ],
+    "types": [],
+    "enums": []
+  },
+  "publicAPI": [],
+  "dependencies": {
+    "mostImported": []
+  },
+  "stats": {
+    "totalSymbols": 8,
+    "exportedSymbols": 0,
+    "analysisTimeMs": 17
+  }
+}

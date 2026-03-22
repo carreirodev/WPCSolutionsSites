@@ -329,7 +329,7 @@ body {
   .container { padding: 0 20px; }
   .navbar { padding: 0 20px; height: 68px; }
   .navbar.scrolled { height: 60px; }
-  .nav-logo img { height: 40px; }
+  .nav-logo img { height: 50px; }
   .navbar.scrolled .nav-logo img { height: 36px; }
 
   .nav-toggle { display: flex; z-index: 1001; }

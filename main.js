@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function initMobileNav() {
   const navToggle = document.getElementById("navToggle");
   const navLinks = document.getElementById("navLinks");
+  const navOverlay = document.getElementById("navOverlay");
 
   if (!navToggle || !navLinks) return;
 
@@ -19,14 +20,28 @@ function initMobileNav() {
   const closeMenu = () => {
     navLinks.classList.remove("active");
     navToggle.classList.remove("active");
+    if (navOverlay) navOverlay.classList.remove("active");
     setExpanded(false);
   };
 
+  const openMenu = () => {
+    navLinks.classList.add("active");
+    navToggle.classList.add("active");
+    if (navOverlay) navOverlay.classList.add("active");
+    setExpanded(true);
+  };
+
   navToggle.addEventListener("click", () => {
-    const isOpen = navLinks.classList.toggle("active");
-    navToggle.classList.toggle("active", isOpen);
-    setExpanded(isOpen);
+    if (navLinks.classList.contains("active")) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
   });
+
+  if (navOverlay) {
+    navOverlay.addEventListener("click", () => closeMenu());
+  }
 
   navLinks.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => closeMenu());
@@ -34,12 +49,6 @@ function initMobileNav() {
 
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") closeMenu();
-  });
-
-  document.addEventListener("click", (e) => {
-    if (!navLinks.classList.contains("active")) return;
-    if (navLinks.contains(e.target) || navToggle.contains(e.target)) return;
-    closeMenu();
   });
 }
 

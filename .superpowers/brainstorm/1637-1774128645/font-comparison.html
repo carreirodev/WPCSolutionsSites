@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comparacao de Fontes</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Playfair+Display:wght@400;500;600&family=DM+Serif+Display&family=Lora:wght@400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; background: #FAFAFA; color: #1E1D1A; }
+
+  .mockup-label {
+    position: sticky; top: 0; z-index: 100;
+    background: #1E1D1A; color: #fff;
+    text-align: center; padding: 10px;
+    font-size: 12px; font-weight: 600; letter-spacing: 0.05em;
+  }
+  .mockup-label span { color: #E8413C; }
+
+  .grid {
+    max-width: 1100px; margin: 48px auto; padding: 0 40px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+  }
+
+  .font-card {
+    background: #fff; border: 2px solid #EBEBEA; border-radius: 16px;
+    padding: 40px 36px; cursor: pointer; transition: all 0.3s;
+    position: relative;
+  }
+  .font-card:hover { border-color: #E8413C; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
+  .font-card.selected { border-color: #E8413C; background: #FEF2F1; }
+
+  .font-label {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+    color: #E8413C; margin-bottom: 8px;
+  }
+  .font-name {
+    font-size: 13px; color: #9A9894; margin-bottom: 24px;
+    font-family: 'Inter', sans-serif;
+  }
+  .font-sample {
+    font-size: 52px; font-weight: 400; line-height: 1.1; color: #1E1D1A;
+    margin-bottom: 20px;
+  }
+  .font-body {
+    font-size: 14px; color: #7C7A75; line-height: 1.6;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .font-a .font-sample { font-family: 'Playfair Display', serif; }
+  .font-b .font-sample { font-family: 'DM Serif Display', serif; }
+  .font-c .font-sample { font-family: 'Lora', serif; }
+  .font-d .font-sample { font-family: 'Fraunces', serif; }
+
+  h2 {
+    text-align: center; max-width: 1100px; margin: 48px auto 0; padding: 0 40px;
+    font-size: 14px; color: #7C7A75; font-weight: 400;
+  }
+
+  .pick-label {
+    text-align: center; max-width: 1100px; margin: 0 auto 48px; padding: 12px 40px 0;
+    font-size: 12px; color: #B8B6B3;
+  }
+</style>
+</head>
+<body>
+
+<div class="mockup-label">COMPARACAO DE FONTES — <span>Clique na que preferir</span></div>
+
+<h2>Todas sao serifadas elegantes, mas com larguras diferentes. Clique na que mais te agradar.</h2>
+<div class="pick-label">A fonte atual (Instrument Serif) e a mais estreita. Estas 4 sao progressivamente mais largas.</div>
+
+<div class="grid">
+  <div class="font-card font-a" onclick="pick(this, 'playfair')">
+    <div class="font-label">Opcao A</div>
+    <div class="font-name">Playfair Display — classica, elegante, bem mais larga</div>
+    <div class="font-sample">Tecnologia<br>que transforma<br>negocios.</div>
+    <div class="font-body">Serif com contraste alto entre tracos finos e grossos. Presenca forte e sofisticada. Muito usada em sites premium e editoriais.</div>
+  </div>
+
+  <div class="font-card font-b" onclick="pick(this, 'dm-serif')">
+    <div class="font-label">Opcao B</div>
+    <div class="font-name">DM Serif Display — moderna, larga, arredondada</div>
+    <div class="font-sample">Tecnologia<br>que transforma<br>negocios.</div>
+    <div class="font-body">Serif contemporanea com terminais arredondados. Mais acolhedora e acessivel que serifas tradicionais. Otima para tech companies.</div>
+  </div>
+
+  <div class="font-card font-c" onclick="pick(this, 'lora')">
+    <div class="font-label">Opcao C</div>
+    <div class="font-name">Lora — equilibrada, corporativa, confiavel</div>
+    <div class="font-sample">Tecnologia<br>que transforma<br>negocios.</div>
+    <div class="font-body">Serif bem balanceada com raizes caligraticas. Largura confortavel, excelente legibilidade. Tom corporativo sem ser rigida.</div>
+  </div>
+
+  <div class="font-card font-d" onclick="pick(this, 'fraunces')">
+    <div class="font-label">Opcao D</div>
+    <div class="font-name">Fraunces — ousada, com personalidade, larga</div>
+    <div class="font-sample">Tecnologia<br>que transforma<br>negocios.</div>
+    <div class="font-body">Serif "soft" com curvas expressivas e variavel optical size. Diferenciada sem ser excentrica. Boa para marcas que querem se destacar.</div>
+  </div>
+</div>
+
+<script>
+function pick(el, name) {
+  document.querySelectorAll('.font-card').forEach(c => c.classList.remove('selected'));
+  el.classList.add('selected');
+  if (window.recordEvent) window.recordEvent('click', name, el.textContent);
+}
+</script>
+</body>
+</html>

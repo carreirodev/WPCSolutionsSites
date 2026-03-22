@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   initMobileNav();
+  initNavbarScroll();
   initScrollReveal();
   initContactFormTracking();
 });
@@ -39,6 +40,19 @@ function initMobileNav() {
     if (!navLinks.classList.contains("active")) return;
     if (navLinks.contains(e.target) || navToggle.contains(e.target)) return;
     closeMenu();
+  });
+}
+
+function initNavbarScroll() {
+  const navbar = document.querySelector(".navbar");
+  if (!navbar) return;
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 60) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
   });
 }
 

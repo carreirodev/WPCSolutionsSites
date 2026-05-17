@@ -17,3 +17,6 @@ pnpm-debug.log*
 .env.*
 
 reports/tmp/
+
+graphify-out/cache/
+graphify-out/.graphify_python

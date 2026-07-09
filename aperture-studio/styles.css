@@ -436,19 +436,22 @@ img { max-width: 100%; display: block; }
   max-width: 62ch; margin: 0 auto 44px; padding: 0 40px;
 }
 .marquee {
+  max-width: 1160px; margin: 0 auto;
+  padding: 0 40px;
   overflow: hidden;
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
-  mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
 }
 .marquee-track {
-  display: flex; gap: 14px; width: max-content;
-  animation: marquee 36s linear infinite;
+  display: flex; gap: 12px; width: max-content;
+  animation: marquee 34s linear infinite;
 }
+.marquee:hover .marquee-track { animation-play-state: paused; }
 .marquee-track span {
   flex: none;
   font-family: var(--font-display);
-  font-size: 14px; font-weight: 600; letter-spacing: 0.04em;
-  padding: 10px 22px; border-radius: 999px;
+  font-size: 13px; font-weight: 600; letter-spacing: 0.04em;
+  padding: 8px 18px; border-radius: 999px;
   background: var(--surface);
   border: 1px solid var(--line);
   color: var(--ink-soft);
@@ -605,6 +608,7 @@ img { max-width: 100%; display: block; }
 
   .formats { padding-bottom: 64px; }
   .formats h2, .formats > p { padding: 0 20px; }
+  .marquee { padding: 0 20px; }
 
   .faq { padding: 0 20px 64px; }
 
@@ -622,8 +626,8 @@ img { max-width: 100%; display: block; }
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
   .mosaic-icon { animation: none; }
-  .marquee-track { animation: none; flex-wrap: wrap; justify-content: center; width: 100%; padding: 0 20px; }
-  .marquee-track span:nth-child(n+20) { display: none; }
-  .marquee { mask-image: none; -webkit-mask-image: none; }
+  /* A faixa de formatos segue rolando por decisão do dono do site:
+     é decorativa (aria-hidden), duplicada para leitores de tela não
+     verem repetição, e pausa no hover. */
   .cell, .btn, .ms-store-badge { transition: none; }
 }

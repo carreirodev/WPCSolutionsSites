@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 1024">
+  <!-- Generator: Adobe Illustrator 30.2.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 1)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: url(#Gradiente_sem_nome_6);
+        fill-opacity: .9;
+      }
+
+      .st1 {
+        fill: url(#Gradiente_sem_nome_5);
+      }
+
+      .st2 {
+        fill: url(#Gradiente_sem_nome_2);
+      }
+
+      .st3 {
+        fill: url(#Gradiente_sem_nome);
+      }
+
+      .st4 {
+        fill: url(#Gradiente_sem_nome_4);
+      }
+
+      .st5 {
+        fill: url(#Gradiente_sem_nome_3);
+      }
+    </style>
+    <linearGradient id="Gradiente_sem_nome" data-name="Gradiente sem nome" x1="137.61" y1="888.39" x2="886.38" y2="139.62" gradientTransform="translate(0 1026) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset=".14" stop-color="#2f366b"/>
+      <stop offset=".32" stop-color="#050a2e"/>
+      <stop offset=".65" stop-color="#050a2e"/>
+      <stop offset="1" stop-color="#0163e6"/>
+    </linearGradient>
+    <linearGradient id="Gradiente_sem_nome_2" data-name="Gradiente sem nome 2" x1="190.06" y1="228.93" x2="500.52" y2="539.39" gradientTransform="translate(0 -54)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00fff0"/>
+      <stop offset="1" stop-color="#0684fd"/>
+    </linearGradient>
+    <linearGradient id="Gradiente_sem_nome_3" data-name="Gradiente sem nome 3" x1="526.01" y1="230.19" x2="833.94" y2="538.13" gradientTransform="translate(0 -54)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4152bc"/>
+      <stop offset="1" stop-color="#2b247b"/>
+    </linearGradient>
+    <linearGradient id="Gradiente_sem_nome_4" data-name="Gradiente sem nome 4" x1="190.06" y1="592.61" x2="500.52" y2="903.07" gradientTransform="translate(0 -54)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#313988"/>
+      <stop offset="1" stop-color="#21236c"/>
+    </linearGradient>
+    <linearGradient id="Gradiente_sem_nome_5" data-name="Gradiente sem nome 5" x1="526.01" y1="593.87" x2="833.94" y2="901.81" gradientTransform="translate(0 -54)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4b6dff"/>
+      <stop offset=".51" stop-color="#6854fa"/>
+      <stop offset="1" stop-color="#a67cff"/>
+    </linearGradient>
+    <radialGradient id="Gradiente_sem_nome_6" data-name="Gradiente sem nome 6" cx="-889.35" cy="-4.89" fx="-889.35" fy="-4.89" r="1.27" gradientTransform="translate(75009.41 83877.79) rotate(47.9) scale(126.06)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ecf9f8"/>
+      <stop offset=".4" stop-color="#71f8fb"/>
+      <stop offset="1" stop-color="#36f8fc"/>
+    </radialGradient>
+  </defs>
+  <rect class="st3" x="87.44" y="87.21" width="849.11" height="849.57" rx="171.67" ry="171.67"/>
+  <g>
+    <rect class="st2" x="194.43" y="179.3" width="301.72" height="301.72" rx="49" ry="49"/>
+    <rect class="st5" x="530.38" y="180.56" width="299.19" height="299.19" rx="49" ry="49"/>
+    <rect class="st4" x="194.43" y="542.98" width="301.72" height="301.72" rx="49" ry="49"/>
+    <rect class="st1" x="530.38" y="544.25" width="299.19" height="299.19" rx="49" ry="49"/>
+    <circle class="st0" cx="345.29" cy="330.32" r="69.73"/>
+  </g>
+</svg>

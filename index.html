@@ -3,73 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WPC Solutions - Software & AI Solutions</title>
+    <title>WPC Solutions | Software, IA e Produtos Digitais</title>
     <meta
       name="description"
-      content="Desenvolvimento de aplicativos, games, websites e soluções de IA de alta performance. 10+ anos de experiência."
+      content="Desenvolvimento de software, aplicativos, websites e soluções de inteligência artificial sob medida. Mais de 10 anos transformando ideias em produtos digitais."
     />
+    <meta name="theme-color" content="#f4f3ef" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#151515" media="(prefers-color-scheme: dark)" />
     <link rel="canonical" href="https://wpcsolutions.com.br/" />
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:site_name" content="WPC Solutions" />
-    <meta
-      property="og:title"
-      content="WPC Solutions - Software & AI Solutions"
-    />
+    <meta property="og:title" content="WPC Solutions | Software, IA e Produtos Digitais" />
     <meta
       property="og:description"
-      content="Desenvolvimento de aplicativos, games, websites e soluções de IA de alta performance. 10+ anos de experiência."
+      content="Criamos software sob medida para resolver problemas reais e abrir novas oportunidades."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://wpcsolutions.com.br/" />
-    <meta
-      property="og:image"
-      content="https://wpcsolutions.com.br/assets/wpc-hero-bg.png"
-    />
+    <meta property="og:image" content="https://wpcsolutions.com.br/assets/imagenHero.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="WPC Solutions - Software & AI Solutions"
-    />
+    <meta name="twitter:title" content="WPC Solutions | Software, IA e Produtos Digitais" />
     <meta
       name="twitter:description"
-      content="Desenvolvimento de aplicativos, games, websites e soluções de IA de alta performance. 10+ anos de experiência."
+      content="Criamos software sob medida para resolver problemas reais e abrir novas oportunidades."
     />
-    <meta
-      name="twitter:image"
-      content="https://wpcsolutions.com.br/assets/wpc-hero-bg.png"
-    />
+    <meta name="twitter:image" content="https://wpcsolutions.com.br/assets/imagenHero.png" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "WPC Solutions",
         "url": "https://wpcsolutions.com.br/",
-        "logo": "https://wpcsolutions.com.br/assets/WPCvertWhite.svg",
+        "logo": "https://wpcsolutions.com.br/assets/WPCvertDark.svg",
+        "email": "contact@wpcsolutions.com.br",
+        "foundingDate": "2015",
         "sameAs": ["https://github.com/carreirodev"]
       }
     </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap"
-    />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/webp" href="assets/icon.webp" />
+    <link rel="icon" type="image/svg+xml" href="assets/WPCvertDark.svg" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Ir para o conteúdo</a>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-      <div class="navbar-inner">
-        <a href="#" class="nav-logo">
-          <img
-            src="assets/WPChorizDark.webp"
-            alt="WPC Solutions"
-            height="52"
-            decoding="async"
-          />
+    <header class="site-header" id="top">
+      <nav class="navbar" aria-label="Navegação principal">
+        <a href="#top" class="nav-logo" aria-label="WPC Solutions, início">
+          <img class="logo-light" src="assets/WPChorizDark.svg" alt="WPC Solutions" width="190" height="68" />
+          <img class="logo-dark" src="assets/WPChorizWhite.svg" alt="" width="190" height="68" />
         </a>
+
         <button
           class="nav-toggle"
           id="navToggle"
@@ -82,6 +65,7 @@
           <span></span>
           <span></span>
         </button>
+
         <ul class="nav-links" id="navLinks">
           <li><a href="#services">Serviços</a></li>
           <li><a href="#about">Sobre</a></li>
@@ -89,266 +73,296 @@
           <li><a href="finalrenamer/index.html">Final Renamer</a></li>
           <li><a href="#contact" class="nav-cta">Fale conosco</a></li>
         </ul>
-      </div>
-    </nav>
-    <div class="nav-overlay" id="navOverlay"></div>
+      </nav>
+      <div class="nav-overlay" id="navOverlay"></div>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-text reveal">
-        <div class="hero-tag">Software & AI Solutions</div>
-        <h1>Tecnologia<br>que transforma<br>negócios.</h1>
-        <div class="hero-line"></div>
-        <p>De apps mobile a agentes de inteligência artificial — mais de 10 anos criando soluções digitais que geram resultado real.</p>
-        <div class="hero-buttons">
-          <a href="#contact" class="btn-primary">Inicie seu projeto</a>
-          <a href="#services" class="btn-outline">Nossos serviços</a>
-        </div>
-      </div>
-      <div class="hero-visual reveal delay-200">
-        <div class="hero-visual-grid">
-          <span style="background:rgba(232,65,60,0.4);"></span>
-          <span style="background:rgba(255,255,255,0.08);"></span>
-          <span style="background:rgba(232,65,60,0.2);"></span>
-          <span style="background:rgba(255,255,255,0.05);"></span>
-          <span style="background:rgba(232,65,60,0.6);"></span>
-          <span style="background:rgba(255,255,255,0.1);"></span>
-          <span style="background:rgba(232,65,60,0.15);"></span>
-          <span style="background:rgba(255,255,255,0.03);"></span>
-          <span style="background:rgba(232,65,60,0.3);"></span>
-          <span style="background:rgba(255,255,255,0.06);"></span>
-          <span style="background:rgba(255,255,255,0.08);"></span>
-          <span style="background:rgba(232,65,60,0.1);"></span>
-          <span style="background:rgba(255,255,255,0.04);"></span>
-          <span style="background:rgba(232,65,60,0.5);"></span>
-          <span style="background:rgba(255,255,255,0.07);"></span>
-        </div>
-        <div class="hero-visual-text">
-          <div class="stat">10+</div>
-          <div class="stat-label">anos de experiência</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Trust Bar -->
-    <div class="trust-bar">
-      <div class="trust-bar-inner">
-        <span class="trust-label">Tecnologias que dominamos</span>
-        <div class="trust-logos">
-          <span class="trust-logo">.NET</span>
-          <span class="trust-logo">React</span>
-          <span class="trust-logo">Unity</span>
-          <span class="trust-logo">Python</span>
-          <span class="trust-logo">Flutter</span>
-          <span class="trust-logo">Azure</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-      <div class="section-tag reveal">O que fazemos</div>
-      <div class="section-title reveal">Soluções completas<br>para cada desafio.</div>
-      <div class="section-subtitle reveal">Do conceito ao deploy. Cobrimos todo o espectro do desenvolvimento digital.</div>
-      <div class="services-grid">
-        <div class="service-card reveal">
-          <div class="service-icon">&#9898;</div>
-          <h3>Apps Mobile</h3>
-          <p>Desenvolvimento nativo e híbrido para iOS e Android. Apps fluidos e otimizados.</p>
-          <a class="service-link" href="services/apps-mobile.html">Saiba mais &rarr;</a>
-        </div>
-        <div class="service-card reveal delay-100">
-          <div class="service-icon">&#9878;</div>
-          <h3>Websites Modernos</h3>
-          <p>Sites corporativos, landing pages e aplicações web. Design responsivo e focado em conversão.</p>
-          <a class="service-link" href="services/websites-modernos.html">Saiba mais &rarr;</a>
-        </div>
-        <div class="service-card reveal delay-200">
-          <div class="service-icon">&#9881;</div>
-          <h3>Game Development</h3>
-          <p>Jogos 2D e 3D para PC e mobile. Experiências interativas com gameplay envolvente.</p>
-          <a class="service-link" href="services/game-development.html">Saiba mais &rarr;</a>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-icon">&#9783;</div>
-          <h3>Software Windows</h3>
-          <p>Ferramentas desktop robustas. Soluções como o <a href="finalrenamer/index.html" style="color:var(--primary-500)">Final Renamer</a> que simplificam o dia a dia.</p>
-          <a class="service-link" href="services/software-windows.html">Saiba mais &rarr;</a>
-        </div>
-        <div class="service-card reveal delay-100">
-          <div class="service-icon" style="background:rgba(232,65,60,0.12);">&#10070;</div>
-          <h3>IA & Machine Learning</h3>
-          <p>Automação inteligente, análise preditiva e NLP. Transforme dados em decisões estratégicas.</p>
-          <a class="service-link" href="#contact">Saiba mais &rarr;</a>
-        </div>
-        <div class="service-card reveal delay-200">
-          <div class="service-icon" style="background:rgba(232,65,60,0.12);">&#9883;</div>
-          <h3>Agentes de IA</h3>
-          <p>Chatbots, assistentes e agentes autônomos. Inteligência artificial aplicada ao seu negócio.</p>
-          <a class="service-link" href="#contact">Saiba mais &rarr;</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- AI Highlight Section -->
-    <section class="ai-highlight">
-      <div class="ai-inner">
-        <div class="ai-grid">
-          <div class="reveal">
-            <div class="section-tag">Novo</div>
-            <div class="section-title" style="color:#fff;margin-bottom:16px;">Inteligência<br>artificial aplicada.</div>
-            <p>Nosso time agora também desenvolve soluções de IA — de modelos preditivos a agentes autônomos que trabalham por você.</p>
-            <div class="ai-stats">
-              <div class="ai-stat">
-                <div class="number">NLP</div>
-                <div class="label">Processamento de linguagem</div>
-              </div>
-              <div class="ai-stat">
-                <div class="number">ML</div>
-                <div class="label">Machine Learning</div>
-              </div>
-              <div class="ai-stat">
-                <div class="number">LLM</div>
-                <div class="label">Large Language Models</div>
-              </div>
-              <div class="ai-stat">
-                <div class="number">RAG</div>
-                <div class="label">Retrieval Augmented Gen.</div>
-              </div>
-            </div>
-          </div>
-          <div class="ai-features reveal delay-200">
-            <div class="ai-feature">
-              <div class="ai-feature-icon">&#9670;</div>
-              <div>
-                <h4>Automação Inteligente</h4>
-                <p>Processos otimizados com IA para reduzir custos e aumentar eficiência operacional.</p>
-              </div>
-            </div>
-            <div class="ai-feature">
-              <div class="ai-feature-icon">&#9673;</div>
-              <div>
-                <h4>Análise Preditiva</h4>
-                <p>Modelos que antecipam tendências e informam decisões estratégicas com dados reais.</p>
-              </div>
-            </div>
-            <div class="ai-feature">
-              <div class="ai-feature-icon">&#9671;</div>
-              <div>
-                <h4>Agentes & Chatbots</h4>
-                <p>Assistentes inteligentes que interagem, aprendem e executam tarefas de forma autônoma.</p>
-              </div>
-            </div>
+    <main id="main">
+      <section class="hero">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Software sob medida desde 2015</p>
+          <h1>Software que move negócios.</h1>
+          <p class="hero-intro">
+            Projetamos produtos digitais, automações e inteligência artificial que resolvem problemas reais do seu negócio.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="button button-primary">Fale conosco</a>
+            <a href="#services" class="button button-secondary">Ver serviços</a>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <div class="section-tag">Sobre nós</div>
-          <div class="section-title" style="margin-bottom:16px;">Impulsionando a<br>inovação desde 2015.</div>
-          <div class="section-divider"></div>
-          <p>A WPC Solutions é uma empresa de desenvolvimento de software fundada nos Estados Unidos, com mais de uma década criando soluções digitais impactantes.</p>
-          <p>Utilizamos tecnologias modernas e metodologias ágeis para entregar projetos que superam expectativas. Nossa paixão é codificar o futuro.</p>
-          <div class="about-stats">
-            <div class="about-stat">
-              <h4>10+</h4>
-              <p>Anos de experiência</p>
-            </div>
-            <div class="about-stat">
-              <h4>2015</h4>
-              <p>Fundação nos EUA</p>
-            </div>
-            <div class="about-stat">
-              <h4>6</h4>
-              <p>Áreas de atuação</p>
-            </div>
+        <div class="hero-media reveal delay-100">
+          <img
+            src="assets/imagenHero.png"
+            alt=""
+            width="819"
+            height="819"
+            fetchpriority="high"
+          />
+          <div class="hero-proof" aria-label="Mais de 10 anos de experiência">
+            <strong>10+</strong>
+            <span>anos criando e lançando software</span>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <div class="contact-inner">
-        <div class="section-tag reveal" style="text-align:center;">Contato</div>
-        <div class="section-title reveal" style="text-align:center;margin-bottom:12px;">Vamos conversar?</div>
-        <div class="section-subtitle reveal" style="text-align:center;margin:0 auto 48px;">Tem um projeto ou ideia? Conte pra gente.</div>
-        <form
-          action="https://formsubmit.co/contact@wpcsolutions.com.br"
-          method="post"
-          class="contact-form reveal"
-          id="contactForm"
-        >
-          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
-          <input type="hidden" name="_next" value="https://wpcsolutions.com.br/obrigado.html" />
-          <input type="hidden" name="_subject" value="Novo contato via site - WPC Solutions" />
-          <input type="hidden" name="_template" value="table" />
-          <input type="hidden" name="_captcha" value="false" />
-          <div class="form-group">
-            <label for="name">Nome</label>
-            <input class="form-input" type="text" id="name" name="name" placeholder="Seu nome completo" autocomplete="name" required />
-          </div>
-          <div class="form-group">
-            <label for="email">E-mail</label>
-            <input class="form-input" type="email" id="email" name="email" placeholder="seu@email.com" autocomplete="email" required />
-          </div>
-          <div class="form-group full">
-            <label for="subject">Assunto</label>
-            <input class="form-input" type="text" id="subject" name="subject" placeholder="Sobre o que vamos falar?" required />
-          </div>
-          <div class="form-group full">
-            <label for="message">Mensagem</label>
-            <textarea class="form-input form-textarea" id="message" name="message" placeholder="Descreva seu projeto ou dúvida..." required></textarea>
-          </div>
-          <button type="submit" class="form-submit">Enviar mensagem</button>
-        </form>
-      </div>
-    </section>
+      <section class="capability-strip" aria-label="Tecnologias e especialidades">
+        <p>.NET</p>
+        <p>React</p>
+        <p>Python</p>
+        <p>Flutter</p>
+        <p>Unity</p>
+        <p>Azure</p>
+        <p>IA aplicada</p>
+      </section>
 
-    <!-- Footer -->
+      <section id="services" class="services section-shell">
+        <div class="services-intro reveal">
+          <img
+            src="https://picsum.photos/seed/wpc-software-work/900/1050"
+            alt=""
+            width="900"
+            height="1050"
+            loading="lazy"
+          />
+          <div>
+            <h2>Da estratégia ao software em produção.</h2>
+            <p>
+              Atuamos em todo o ciclo do produto, com decisões técnicas conectadas aos objetivos do negócio.
+            </p>
+          </div>
+        </div>
+
+        <div class="services-list">
+          <article class="service-item reveal">
+            <span class="service-index">01</span>
+            <div>
+              <h3>Aplicativos mobile</h3>
+              <p>Apps nativos e multiplataforma para iOS e Android, preparados para crescer com seu produto.</p>
+            </div>
+            <a href="services/apps-mobile.html" aria-label="Conhecer o serviço de aplicativos mobile">Conhecer</a>
+          </article>
+
+          <article class="service-item reveal">
+            <span class="service-index">02</span>
+            <div>
+              <h3>Websites e plataformas</h3>
+              <p>Sites rápidos, landing pages e sistemas web com uma experiência clara em qualquer tela.</p>
+            </div>
+            <a href="services/websites-modernos.html" aria-label="Conhecer o serviço de websites e plataformas">Conhecer</a>
+          </article>
+
+          <article class="service-item reveal">
+            <span class="service-index">03</span>
+            <div>
+              <h3>Inteligência artificial</h3>
+              <p>Agentes, automações, busca semântica e modelos integrados aos processos que já existem.</p>
+            </div>
+            <a href="#contact" aria-label="Conversar sobre inteligência artificial">Conversar</a>
+          </article>
+
+          <article class="service-item reveal">
+            <span class="service-index">04</span>
+            <div>
+              <h3>Software para Windows</h3>
+              <p>Aplicações desktop robustas, integrações e ferramentas que simplificam rotinas complexas.</p>
+            </div>
+            <a href="services/software-windows.html" aria-label="Conhecer o serviço de software para Windows">Conhecer</a>
+          </article>
+
+          <article class="service-item reveal">
+            <span class="service-index">05</span>
+            <div>
+              <h3>Games e experiências</h3>
+              <p>Jogos 2D e 3D para desktop e mobile, da mecânica inicial ao lançamento.</p>
+            </div>
+            <a href="services/game-development.html" aria-label="Conhecer o serviço de desenvolvimento de games">Conhecer</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="products section-shell" aria-labelledby="products-title">
+        <div class="products-heading reveal">
+          <p class="eyebrow">Produtos próprios</p>
+          <h2 id="products-title">Nós também construímos o que acreditamos.</h2>
+          <p>
+            Produtos reais mantêm nosso trabalho próximo dos desafios de quem planeja, desenvolve e lança software.
+          </p>
+        </div>
+
+        <div class="product-grid">
+          <a class="product product-aperture reveal" href="aperture-studio/index.html">
+            <div class="product-copy">
+              <span>Windows</span>
+              <h3>Aperture Studio AI</h3>
+              <p>Organize grandes bibliotecas de fotos e vídeos com inteligência artificial local.</p>
+              <strong>Conhecer produto</strong>
+            </div>
+            <img
+              src="aperture-studio/assets/aperture-icon-310.png"
+              alt="Ícone do Aperture Studio AI"
+              width="310"
+              height="310"
+              loading="lazy"
+            />
+          </a>
+
+          <a class="product product-renamer reveal delay-100" href="finalrenamer/index.html">
+            <div class="product-copy">
+              <span>Windows</span>
+              <h3>Final Renamer</h3>
+              <p>Renomeie arquivos em massa com regras flexíveis, preview e sugestões por IA.</p>
+              <strong>Conhecer produto</strong>
+            </div>
+            <img
+              src="https://picsum.photos/seed/final-renamer-files/800/520"
+              alt=""
+              width="800"
+              height="520"
+              loading="lazy"
+            />
+          </a>
+        </div>
+      </section>
+
+      <section class="ai-section section-shell">
+        <div class="ai-copy reveal">
+          <h2>IA aplicada ao trabalho, não à apresentação.</h2>
+          <p>
+            Identificamos onde a inteligência artificial reduz esforço, melhora decisões ou cria uma experiência melhor para o cliente.
+          </p>
+          <a href="#contact" class="text-link">Fale conosco</a>
+        </div>
+
+        <div class="ai-capabilities reveal delay-100">
+          <div>
+            <h3>Agentes e assistentes</h3>
+            <p>Fluxos que consultam dados, executam tarefas e trabalham com regras do seu negócio.</p>
+          </div>
+          <div>
+            <h3>Busca e conhecimento</h3>
+            <p>RAG, busca semântica e respostas baseadas em documentos e sistemas internos.</p>
+          </div>
+          <div>
+            <h3>Automação inteligente</h3>
+            <p>Classificação, extração e análise para reduzir tarefas repetitivas com supervisão.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="process section-shell" aria-labelledby="process-title">
+        <div class="process-heading reveal">
+          <h2 id="process-title">Um processo direto, do problema ao lançamento.</h2>
+        </div>
+        <div class="process-steps">
+          <article class="reveal">
+            <span>Entender</span>
+            <h3>Definimos o problema certo.</h3>
+            <p>Objetivos, usuários, restrições e prioridades ficam claros antes da primeira linha de código.</p>
+          </article>
+          <article class="reveal delay-100">
+            <span>Construir</span>
+            <h3>Entregamos em ciclos curtos.</h3>
+            <p>Você acompanha decisões, valida o produto e reduz riscos enquanto o projeto avança.</p>
+          </article>
+          <article class="reveal delay-200">
+            <span>Evoluir</span>
+            <h3>Medimos e melhoramos.</h3>
+            <p>Depois do lançamento, corrigimos, aprendemos e priorizamos a próxima evolução.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="about section-shell">
+        <div class="about-media reveal">
+          <img
+            src="https://picsum.photos/seed/wpc-team-collaboration/1100/850"
+            alt=""
+            width="1100"
+            height="850"
+            loading="lazy"
+          />
+        </div>
+        <div class="about-copy reveal delay-100">
+          <h2>Experiência para decidir bem. Proximidade para executar melhor.</h2>
+          <p>
+            A WPC Solutions nasceu em 2015 nos Estados Unidos. Desde então, criamos software para diferentes mercados sem perder o contato direto com cada projeto.
+          </p>
+          <dl class="about-facts">
+            <div>
+              <dt>10+</dt>
+              <dd>anos de experiência</dd>
+            </div>
+            <div>
+              <dt>2015</dt>
+              <dd>início da WPC Solutions</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="contact-layout section-shell">
+          <div class="contact-copy reveal">
+            <p class="eyebrow">Contato</p>
+            <h2>Conte o que você precisa construir.</h2>
+            <p>Responderemos com perguntas claras e um próximo passo possível.</p>
+            <a href="mailto:contact@wpcsolutions.com.br">contact@wpcsolutions.com.br</a>
+          </div>
+
+          <form
+            action="https://formsubmit.co/contact@wpcsolutions.com.br"
+            method="post"
+            class="contact-form reveal delay-100"
+            id="contactForm"
+          >
+            <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" />
+            <input type="hidden" name="_next" value="https://wpcsolutions.com.br/obrigado.html" />
+            <input type="hidden" name="_subject" value="Novo contato via site - WPC Solutions" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input type="text" id="name" name="name" autocomplete="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" autocomplete="email" required />
+            </div>
+            <div class="form-group form-full">
+              <label for="subject">Assunto</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+            <div class="form-group form-full">
+              <label for="message">Mensagem</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <p class="form-note form-full">Usaremos seus dados apenas para responder a esta mensagem.</p>
+            <button type="submit" class="button button-primary form-submit">Enviar mensagem</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
     <footer class="footer">
-      <div class="footer-inner">
-        <div class="footer-grid">
-          <div class="footer-brand">
-            <div class="footer-logo">
-              <img src="assets/WPChorizWhite.webp" alt="WPC Solutions" />
-            </div>
-            <p>Desenvolvendo o futuro, uma linha de código por vez.</p>
-          </div>
-          <div>
-            <h4>Empresa</h4>
-            <ul>
-              <li><a href="#about">Sobre nós</a></li>
-              <li><a href="#services">Serviços</a></li>
-              <li><a href="portfolio/index.html">Portfólio</a></li>
-              <li><a href="#contact">Contato</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4>Produtos</h4>
-            <ul>
-              <li><a href="finalrenamer/index.html">Final Renamer</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4>Conecte-se</h4>
-            <ul>
-              <li><a href="https://github.com/carreirodev" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-              <li><a href="mailto:contact@wpcsolutions.com.br">E-mail</a></li>
-            </ul>
-          </div>
+      <div class="footer-main">
+        <a href="#top" class="footer-logo" aria-label="WPC Solutions, início">
+          <img class="logo-light" src="assets/WPChorizDark.svg" alt="WPC Solutions" width="190" height="68" />
+          <img class="logo-dark" src="assets/WPChorizWhite.svg" alt="" width="190" height="68" />
+        </a>
+        <p>Software bem pensado. Produto bem construído.</p>
+        <div class="footer-links">
+          <a href="#services">Serviços</a>
+          <a href="#about">Sobre</a>
+          <a href="portfolio/index.html">Portfólio</a>
+          <a href="finalrenamer/index.html">Final Renamer</a>
+          <a href="https://github.com/carreirodev" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
-        <div class="footer-bottom">
-          <span>&copy; 2026 WPC Solutions. Todos os direitos reservados.</span>
-          <span style="display:flex;align-items:center;gap:6px;">
-            <span style="width:6px;height:6px;border-radius:50%;background:var(--primary-500);"></span>
-            Feito com propósito.
-          </span>
-        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 WPC Solutions.</span>
+        <a href="mailto:contact@wpcsolutions.com.br">contact@wpcsolutions.com.br</a>
       </div>
     </footer>
 

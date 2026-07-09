@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
   initMobileNav();
-  initNavbarScroll();
   initScrollReveal();
   initContactFormTracking();
 });
@@ -21,6 +20,7 @@ function initMobileNav() {
     navLinks.classList.remove("active");
     navToggle.classList.remove("active");
     if (navOverlay) navOverlay.classList.remove("active");
+    document.body.classList.remove("menu-open");
     setExpanded(false);
   };
 
@@ -28,6 +28,7 @@ function initMobileNav() {
     navLinks.classList.add("active");
     navToggle.classList.add("active");
     if (navOverlay) navOverlay.classList.add("active");
+    document.body.classList.add("menu-open");
     setExpanded(true);
   };
 
@@ -48,19 +49,15 @@ function initMobileNav() {
   });
 
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") closeMenu();
+    if (e.key === "Escape" && navLinks.classList.contains("active")) {
+      closeMenu();
+      navToggle.focus();
+    }
   });
-}
 
-function initNavbarScroll() {
-  const navbar = document.querySelector(".navbar");
-  if (!navbar) return;
-
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 60) {
-      navbar.classList.add("scrolled");
-    } else {
-      navbar.classList.remove("scrolled");
+  window.matchMedia("(min-width: 781px)").addEventListener("change", (event) => {
+    if (event.matches) {
+      closeMenu();
     }
   });
 }
@@ -68,6 +65,11 @@ function initNavbarScroll() {
 function initScrollReveal() {
   const revealElements = document.querySelectorAll(".reveal");
   if (!revealElements.length) return;
+
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    revealElements.forEach((element) => element.classList.add("active"));
+    return;
+  }
 
   const observer = new IntersectionObserver(
     (entries, obs) => {

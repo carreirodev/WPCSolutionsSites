@@ -3,139 +3,138 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Game Development - WPC Solutions</title>
-    <meta
-      name="description"
-      content="Criação de jogos 2D e 3D para PC e mobile, com foco em gameplay, performance e polish."
-    />
-    <link
-      rel="canonical"
-      href="https://wpcsolutions.com.br/services/game-development.html"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
-    />
+    <title>Desenvolvimento de Games | WPC Solutions</title>
+    <meta name="description" content="Desenvolvimento de jogos 2D e 3D para desktop e mobile, do protótipo ao lançamento." />
+    <meta name="theme-color" content="#f4f3ef" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#151515" media="(prefers-color-scheme: dark)" />
+    <link rel="canonical" href="https://wpcsolutions.com.br/services/game-development.html" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="WPC Solutions" />
+    <meta property="og:title" content="Desenvolvimento de Games | WPC Solutions" />
+    <meta property="og:description" content="Gameplay, engenharia e acabamento trabalhando na mesma direção." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wpcsolutions.com.br/services/game-development.html" />
     <link rel="stylesheet" href="../styles.css" />
-    <link rel="icon" type="image/svg+xml" href="../assets/WPCvertWhite.svg" />
+    <link rel="stylesheet" href="../internal.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets/WPCvertDark.svg" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="container nav-content">
-        <a href="../index.html" class="logo">
-          <img
-            src="../assets/WPChorizWhite.svg"
-            alt="WPC Solutions"
-            width="240"
-            height="40"
-            decoding="async"
-          />
+    <a class="skip-link" href="#main">Ir para o conteúdo</a>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Navegação principal">
+        <a href="../index.html" class="nav-logo" aria-label="WPC Solutions, início">
+          <img class="logo-light" src="../assets/WPChorizDark.svg" alt="WPC Solutions" width="190" height="68" />
+          <img class="logo-dark" src="../assets/WPChorizWhite.svg" alt="" width="190" height="68" />
         </a>
-        <button
-          class="nav-toggle"
-          id="navToggle"
-          type="button"
-          aria-label="Abrir menu"
-          aria-controls="navLinks"
-          aria-expanded="false"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menu" aria-controls="navLinks" aria-expanded="false">
+          <span></span><span></span><span></span>
         </button>
         <ul class="nav-links" id="navLinks">
-          <li><a href="../index.html#services">Serviços</a></li>
+          <li><a href="../index.html#services" aria-current="page">Serviços</a></li>
+          <li><a href="../index.html#about">Sobre</a></li>
           <li><a href="../portfolio/index.html">Portfólio</a></li>
           <li><a href="../finalrenamer/index.html">Final Renamer</a></li>
-          <li><a href="../index.html#contact" class="btn-contact">Contato</a></li>
+          <li><a href="../index.html#contact" class="nav-cta">Fale conosco</a></li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+      <div class="nav-overlay" id="navOverlay"></div>
+    </header>
 
-    <section class="hero hero-sm">
-      <img
-        src="../assets/wpc-hero-bg.png"
-        alt=""
-        class="hero-bg"
-        width="1024"
-        height="1024"
-        decoding="async"
-        fetchpriority="high"
-      />
-      <div class="container hero-content reveal">
-        <span class="hero-tag">SERVIÇO</span>
-        <h1 class="hero-title">Game Development</h1>
-        <p class="hero-subtitle">
-          Jogos com gameplay sólido, arte consistente e performance em primeiro
-          lugar.
-        </p>
-        <a href="../index.html#contact" class="btn-primary">Vamos criar um jogo</a>
-      </div>
-    </section>
-
-    <section class="page-section">
-      <div class="container">
-        <div class="section-header reveal">
-          <h2 class="section-title">Como trabalhamos</h2>
-          <p>Iteração rápida com foco em diversão, estabilidade e entrega.</p>
-        </div>
-
-        <div class="page-grid">
-          <div class="page-card reveal">
-            <h3>Protótipos</h3>
-            <p>Validação de mecânicas e loop principal com testes rápidos.</p>
-          </div>
-          <div class="page-card reveal">
-            <h3>Produção</h3>
-            <p>Arquitetura, níveis, UI/UX e otimizações por plataforma.</p>
-          </div>
-          <div class="page-card reveal">
-            <h3>Polish e lançamento</h3>
-            <p>Balanceamento, correções e preparação para release.</p>
+    <main id="main">
+      <section class="subpage-hero">
+        <div class="subpage-copy reveal">
+          <p class="eyebrow">Game development</p>
+          <h1>Da mecânica certa ao jogo pronto para jogar.</h1>
+          <p>Construímos jogos 2D e 3D para desktop e mobile com foco em resposta, desempenho e clareza de produção.</p>
+          <div class="subpage-actions">
+            <a href="../index.html#contact" class="button button-primary">Fale conosco</a>
+            <a href="#production" class="button button-secondary">Ver processo</a>
           </div>
         </div>
-      </div>
-    </section>
+        <figure class="subpage-media reveal delay-100">
+          <img src="https://picsum.photos/seed/wpc-game-world/1100/1300" alt="" width="1100" height="1300" fetchpriority="high" />
+          <figcaption>Protótipos rápidos antes de decisões caras.</figcaption>
+        </figure>
+      </section>
 
-    <footer>
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-logo">
-            <img
-              src="../assets/WPChorizWhite.svg"
-              alt="WPC Solutions"
-              width="240"
-              height="50"
-              decoding="async"
-            />
-            <p style="color: #666; max-width: 300px; margin-top: 10px">
-              Desenvolvendo o futuro, uma linha de código por vez.
-            </p>
-          </div>
-          <div class="footer-links">
-            <h4>Empresa</h4>
+      <div class="page-band">
+        <div class="page-band-inner">
+          <span>Unity</span>
+          <span>2D e 3D</span>
+          <span>Desktop e mobile</span>
+          <span>Performance por plataforma</span>
+        </div>
+      </div>
+
+      <section id="production" class="feature-layout section-shell">
+        <div class="feature-summary reveal">
+          <h2>O jogo começa pelo que precisa ser divertido.</h2>
+          <p>Validamos o loop principal cedo e expandimos somente o que fortalece a experiência.</p>
+        </div>
+        <div class="feature-list">
+          <article class="feature-item reveal">
+            <span>01</span>
+            <div><h3>Conceito jogável</h3><p>Transformamos a ideia em regras, interação e um protótipo que pode ser testado.</p></div>
+          </article>
+          <article class="feature-item reveal">
+            <span>02</span>
+            <div><h3>Sistemas de jogo</h3><p>Arquitetura, progressão, UI, áudio e conteúdo evoluem sobre uma base coerente.</p></div>
+          </article>
+          <article class="feature-item reveal">
+            <span>03</span>
+            <div><h3>Testes e balanceamento</h3><p>Ajustamos ritmo, dificuldade e feedback com base em sessões reais de uso.</p></div>
+          </article>
+          <article class="feature-item reveal">
+            <span>04</span>
+            <div><h3>Polimento e release</h3><p>Performance, correções e requisitos da plataforma são fechados antes da publicação.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="detail-section section-shell">
+        <div class="detail-heading reveal">
+          <h2>Produção compatível com o tamanho do projeto.</h2>
+          <p>Escopo e tecnologia são ajustados ao público, ao prazo e à capacidade de manutenção.</p>
+        </div>
+        <div class="detail-grid">
+          <article class="detail-card detail-card-accent reveal">
+            <h3>Protótipos que respondem perguntas.</h3>
+            <p>Cada build inicial existe para validar uma hipótese concreta de gameplay ou tecnologia.</p>
             <ul>
-              <li><a href="../index.html#about">Sobre Nós</a></li>
-              <li><a href="../portfolio/index.html">Portfólio</a></li>
-              <li><a href="../index.html#contact">Contato</a></li>
+              <li>Loop principal</li>
+              <li>Controles e câmera</li>
+              <li>Viabilidade técnica</li>
             </ul>
-          </div>
-          <div class="footer-links">
-            <h4>Produtos</h4>
-            <ul>
-              <li><a href="../finalrenamer/index.html">Final Renamer</a></li>
-            </ul>
-          </div>
+          </article>
+          <article class="detail-card reveal delay-100">
+            <h3>Desempenho desde a base.</h3>
+            <p>Orçamento de memória, renderização e carregamento entram nas decisões antes da etapa de otimização.</p>
+          </article>
         </div>
-        <div class="copyright">
-          &copy; 2026 WPC Solutions. Todos os direitos reservados.
+      </section>
+
+      <section class="page-cta reveal">
+        <h2>Tem uma mecânica ou universo para testar?</h2>
+        <p>Conte a plataforma, o público e o estágio atual da ideia.</p>
+        <a href="../index.html#contact" class="button button-primary">Fale conosco</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-main">
+        <a href="../index.html" class="footer-logo" aria-label="WPC Solutions, início">
+          <img class="logo-light" src="../assets/WPChorizDark.svg" alt="WPC Solutions" width="190" height="68" />
+          <img class="logo-dark" src="../assets/WPChorizWhite.svg" alt="" width="190" height="68" />
+        </a>
+        <p>Software bem pensado. Produto bem construído.</p>
+        <div class="footer-links">
+          <a href="../index.html#services">Serviços</a><a href="../index.html#about">Sobre</a>
+          <a href="../portfolio/index.html">Portfólio</a><a href="../finalrenamer/index.html">Final Renamer</a>
+          <a href="https://github.com/carreirodev" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
+      <div class="footer-bottom"><span>&copy; 2026 WPC Solutions.</span><a href="mailto:contact@wpcsolutions.com.br">contact@wpcsolutions.com.br</a></div>
     </footer>
-
     <script src="../main.js"></script>
   </body>
 </html>
-

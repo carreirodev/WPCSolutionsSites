@@ -207,7 +207,22 @@ a:hover {
   gap: var(--space-sm);
 }
 
-.nav-brand img {
+.app-mark {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(116, 192, 252, 0.55);
+  border-radius: var(--radius-md);
+  background: var(--color-bg-secondary);
+  color: var(--color-accent-secondary);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.nav-brand .app-mark {
   width: 40px;
   height: 40px;
 }
@@ -238,7 +253,7 @@ a:hover {
 /* Hero Section */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   padding: calc(80px + var(--space-2xl)) 0 var(--space-2xl);
@@ -253,8 +268,7 @@ a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("assets/hero-bg.jpg") center/cover no-repeat;
-  opacity: 0.15;
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .hero::after {
@@ -327,12 +341,11 @@ a:hover {
   animation: fadeInUp 0.8s ease 0.2s both;
 }
 
-.hero-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain;
-  max-width: 280px;
+.hero-image .app-mark-hero {
+  width: min(58vw, 280px);
+  height: min(58vw, 280px);
+  border-radius: var(--radius-xl);
+  font-size: clamp(3rem, 9vw, 6rem);
   filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.4));
   animation: float 6s ease-in-out infinite;
 }
@@ -770,6 +783,8 @@ a:hover {
   gap: 5px;
   cursor: pointer;
   padding: 10px;
+  border: 0;
+  background: transparent;
 }
 
 .nav-toggle span {
@@ -798,8 +813,7 @@ a:hover {
     order: -1;
   }
 
-  .hero-image img {
-    max-width: 300px;
+  .hero-image .app-mark-hero {
     margin: 0 auto;
   }
 

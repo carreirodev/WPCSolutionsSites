@@ -26,7 +26,6 @@
       property="og:description"
       content="A ferramenta definitiva de renomeação em massa com IA. Organize fotos, músicas e documentos de forma inteligente."
     />
-    <meta property="og:image" content="assets/icon.png" />
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
@@ -43,10 +42,6 @@
       name="twitter:description"
       content="A ferramenta definitiva de renomeação em massa com IA. Organize fotos, músicas e documentos de forma inteligente."
     />
-    <meta
-      name="twitter:image"
-      content="https://wpcsolutions.com.br/finalrenamer/assets/icon.png"
-    />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -55,7 +50,6 @@
         "applicationCategory": "UtilitiesApplication",
         "operatingSystem": "Windows",
         "url": "https://wpcsolutions.com.br/finalrenamer/",
-        "image": "https://wpcsolutions.com.br/finalrenamer/assets/icon.png",
         "description": "Ferramenta de renomeação em massa com IA para organizar fotos, músicas e documentos.",
         "downloadUrl": "https://apps.microsoft.com/detail/9nx739bh6hv8?hl=pt-BR&gl=BR",
         "offers": {
@@ -72,7 +66,7 @@
     </script>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/icon.png" />
+    <link rel="icon" type="image/svg+xml" href="../assets/WPCvertDark.svg" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -88,22 +82,16 @@
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
       <div class="container nav-content">
-        <a href="#" class="nav-brand">
-          <img
-            src="assets/icon.png"
-            alt="Final Renamer Icon"
-            width="512"
-            height="512"
-            decoding="async"
-          />
+        <a href="#hero" class="nav-brand">
+          <span class="app-mark" aria-hidden="true">FR</span>
           <span>Final Renamer</span>
         </a>
 
-        <div class="nav-toggle" id="navToggle">
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menu" aria-controls="navLinks" aria-expanded="false">
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </button>
 
         <ul class="nav-links" id="navLinks">
           <li><a href="#trust">Confiança</a></li>
@@ -162,14 +150,7 @@
         </div>
 
         <div class="hero-image">
-          <img
-            src="assets/icon.png"
-            alt="Final Renamer App"
-            width="512"
-            height="512"
-            decoding="async"
-            fetchpriority="high"
-          />
+          <div class="app-mark app-mark-hero" aria-label="Final Renamer">FR</div>
         </div>
       </div>
     </section>
@@ -413,7 +394,7 @@
             data-track="ms_store_badge"
           >
             <img
-              src="assets/DFTMS.png"
+              src="../aperture-studio/assets/DFTMS.png"
               alt="Disponível na Microsoft Store"
               width="830"
               height="242"
@@ -440,7 +421,7 @@
             />
           </a>
           <p class="footer-text">
-            © 2025 WPC Solutions. Todos os direitos reservados.
+            © 2026 WPC Solutions. Todos os direitos reservados.
           </p>
         </div>
 

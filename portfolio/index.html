@@ -3,42 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio - WPC Solutions</title>
+    <title>Portfólio | WPC Solutions</title>
     <meta
       name="description"
-      content="Projetos e produtos desenvolvidos pela WPC Solutions: apps, jogos, websites e ferramentas."
+      content="Conheça produtos e projetos desenvolvidos pela WPC Solutions para Windows, web, mobile e inteligência artificial."
     />
+    <meta name="theme-color" content="#f4f3ef" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#151515" media="(prefers-color-scheme: dark)" />
     <link rel="canonical" href="https://wpcsolutions.com.br/portfolio/" />
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:site_name" content="WPC Solutions" />
-    <meta property="og:title" content="Portfólio - WPC Solutions" />
-    <meta
-      property="og:description"
-      content="Projetos e produtos desenvolvidos pela WPC Solutions: apps, jogos, websites e ferramentas."
-    />
+    <meta property="og:title" content="Portfólio | WPC Solutions" />
+    <meta property="og:description" content="Produtos próprios e soluções digitais construídas pela WPC Solutions." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://wpcsolutions.com.br/portfolio/" />
-    <meta property="og:image" content="https://wpcsolutions.com.br/assets/wpc-hero-bg.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+    <meta
+      property="og:image"
+      content="https://wpcsolutions.com.br/aperture-studio/assets/aperture-icon-310.png"
     />
     <link rel="stylesheet" href="../styles.css" />
-    <link rel="icon" type="image/svg+xml" href="../assets/WPCvertWhite.svg" />
+    <link rel="stylesheet" href="../internal.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets/WPCvertDark.svg" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="container nav-content">
-        <a href="../index.html" class="logo">
-          <img
-            src="../assets/WPChorizWhite.svg"
-            alt="WPC Solutions"
-            width="240"
-            height="40"
-            decoding="async"
-          />
+    <a class="skip-link" href="#main">Ir para o conteúdo</a>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Navegação principal">
+        <a href="../index.html" class="nav-logo" aria-label="WPC Solutions, início">
+          <img class="logo-light" src="../assets/WPChorizDark.svg" alt="WPC Solutions" width="190" height="68" />
+          <img class="logo-dark" src="../assets/WPChorizWhite.svg" alt="" width="190" height="68" />
         </a>
         <button
           class="nav-toggle"
@@ -48,108 +41,142 @@
           aria-controls="navLinks"
           aria-expanded="false"
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          <span></span><span></span><span></span>
         </button>
         <ul class="nav-links" id="navLinks">
           <li><a href="../index.html#services">Serviços</a></li>
-          <li><a href="../portfolio/index.html">Portfólio</a></li>
+          <li><a href="../index.html#about">Sobre</a></li>
+          <li><a href="index.html" aria-current="page">Portfólio</a></li>
           <li><a href="../finalrenamer/index.html">Final Renamer</a></li>
-          <li><a href="../index.html#contact" class="btn-contact">Contato</a></li>
+          <li><a href="../index.html#contact" class="nav-cta">Fale conosco</a></li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+      <div class="nav-overlay" id="navOverlay"></div>
+    </header>
 
-    <section class="hero hero-sm">
-      <img
-        src="../assets/wpc-hero-bg.png"
-        alt=""
-        class="hero-bg"
-        width="1024"
-        height="1024"
-        decoding="async"
-        fetchpriority="high"
-      />
-      <div class="container hero-content reveal">
-        <span class="hero-tag">PORTFÓLIO</span>
-        <h1 class="hero-title">Projetos e Produtos</h1>
-        <p class="hero-subtitle">
-          Uma visão rápida do que construímos — e do que podemos construir com
-          você.
-        </p>
-        <a href="../index.html#contact" class="btn-primary">Iniciar um projeto</a>
-      </div>
-    </section>
-
-    <section class="page-section">
-      <div class="container">
-        <div class="section-header reveal">
-          <h2 class="section-title">Destaques</h2>
-          <p>Seleção de produtos e iniciativas.</p>
-        </div>
-
-        <div class="page-grid">
-          <div class="page-card reveal">
-            <h3>Final Renamer</h3>
-            <p>
-              Renomeação em massa com recursos avançados e suporte a IA local.
-            </p>
-            <p><a href="../finalrenamer/index.html">Ver página do produto</a></p>
-          </div>
-
-          <div class="page-card reveal">
-            <h3>Websites e Landing Pages</h3>
-            <p>Sites rápidos, responsivos e focados em conversão.</p>
-            <p><a href="../services/websites-modernos.html">Ver serviço</a></p>
-          </div>
-
-          <div class="page-card reveal">
-            <h3>Apps e Ferramentas</h3>
-            <p>Aplicativos e soluções sob medida para necessidades reais.</p>
-            <p><a href="../services/apps-mobile.html">Ver serviço</a></p>
+    <main id="main">
+      <section class="subpage-hero">
+        <div class="subpage-copy reveal">
+          <p class="eyebrow">Portfólio</p>
+          <h1>Produtos que enfrentam problemas reais.</h1>
+          <p>
+            Criamos nossas próprias ferramentas e aplicamos o mesmo cuidado técnico em cada projeto de cliente.
+          </p>
+          <div class="subpage-actions">
+            <a href="../index.html#contact" class="button button-primary">Fale conosco</a>
+            <a href="#products" class="button button-secondary">Ver produtos</a>
           </div>
         </div>
-      </div>
-    </section>
+        <figure class="subpage-media reveal delay-100">
+          <img
+            src="https://picsum.photos/seed/wpc-portfolio-products/1100/1300"
+            alt=""
+            width="1100"
+            height="1300"
+            fetchpriority="high"
+          />
+          <figcaption>Produto, engenharia e experiência trabalhando juntos.</figcaption>
+        </figure>
+      </section>
 
-    <footer>
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-logo">
+      <div class="page-band">
+        <div class="page-band-inner">
+          <span>Produtos Windows</span>
+          <span>Aplicações web</span>
+          <span>Inteligência artificial local</span>
+          <span>Experiências mobile</span>
+        </div>
+      </div>
+
+      <section id="products" class="portfolio-showcase section-shell">
+        <div class="portfolio-heading reveal">
+          <p class="eyebrow">Produtos próprios</p>
+          <h2>Construídos, lançados e mantidos pela WPC.</h2>
+          <p>Produtos próprios nos mantêm próximos das decisões reais de arquitetura, suporte e evolução.</p>
+        </div>
+
+        <div class="portfolio-grid">
+          <a class="case-card case-aperture reveal" href="../aperture-studio/index.html">
+            <span>Aperture Studio AI</span>
+            <h2>Uma biblioteca visual preparada para grandes acervos.</h2>
+            <p>Organização de fotos e vídeos com busca semântica, reconhecimento e IA executada localmente.</p>
+            <strong>Conhecer produto</strong>
             <img
-              src="../assets/WPChorizWhite.svg"
-              alt="WPC Solutions"
-              width="240"
-              height="50"
-              decoding="async"
+              src="../aperture-studio/assets/aperture-icon-310.png"
+              alt="Ícone do Aperture Studio AI"
+              width="310"
+              height="310"
+              loading="lazy"
             />
-            <p style="color: #666; max-width: 300px; margin-top: 10px">
-              Desenvolvendo o futuro, uma linha de código por vez.
-            </p>
-          </div>
-          <div class="footer-links">
-            <h4>Empresa</h4>
-            <ul>
-              <li><a href="../index.html#about">Sobre Nós</a></li>
-              <li><a href="../index.html#services">Serviços</a></li>
-              <li><a href="../index.html#contact">Contato</a></li>
-            </ul>
-          </div>
-          <div class="footer-links">
-            <h4>Produtos</h4>
-            <ul>
-              <li><a href="../finalrenamer/index.html">Final Renamer</a></li>
-            </ul>
-          </div>
+          </a>
+
+          <a class="case-card case-renamer reveal delay-100" href="../finalrenamer/index.html">
+            <span>Final Renamer</span>
+            <h2>Arquivos organizados em menos etapas.</h2>
+            <p>Renomeação em massa com regras flexíveis, preview e suporte a inteligência artificial local.</p>
+            <strong>Conhecer produto</strong>
+            <img
+              src="https://picsum.photos/seed/final-renamer-workflow/800/520"
+              alt=""
+              width="800"
+              height="520"
+              loading="lazy"
+            />
+          </a>
         </div>
-        <div class="copyright">
-          &copy; 2026 WPC Solutions. Todos os direitos reservados.
+      </section>
+
+      <section class="capability-showcase section-shell">
+        <div class="reveal">
+          <h2>O que podemos construir com você.</h2>
         </div>
+        <div class="capability-columns">
+          <section class="reveal">
+            <h3>Produtos digitais</h3>
+            <p>Aplicativos, sistemas web e ferramentas desktop do primeiro escopo à publicação.</p>
+          </section>
+          <section class="reveal delay-100">
+            <h3>IA integrada</h3>
+            <p>Busca, agentes, classificação e automações conectadas aos processos do seu negócio.</p>
+          </section>
+          <section class="reveal">
+            <h3>Experiências interativas</h3>
+            <p>Games, protótipos e interfaces que exigem desempenho e resposta cuidadosa.</p>
+          </section>
+          <section class="reveal delay-100">
+            <h3>Evolução técnica</h3>
+            <p>Modernização de produtos existentes com entregas graduais e risco controlado.</p>
+          </section>
+        </div>
+      </section>
+
+      <section class="page-cta reveal">
+        <h2>Seu projeto pode ser o próximo.</h2>
+        <p>Conte o problema, o contexto e o resultado que você espera alcançar.</p>
+        <a href="../index.html#contact" class="button button-primary">Fale conosco</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-main">
+        <a href="../index.html" class="footer-logo" aria-label="WPC Solutions, início">
+          <img class="logo-light" src="../assets/WPChorizDark.svg" alt="WPC Solutions" width="190" height="68" />
+          <img class="logo-dark" src="../assets/WPChorizWhite.svg" alt="" width="190" height="68" />
+        </a>
+        <p>Software bem pensado. Produto bem construído.</p>
+        <div class="footer-links">
+          <a href="../index.html#services">Serviços</a>
+          <a href="../index.html#about">Sobre</a>
+          <a href="index.html">Portfólio</a>
+          <a href="../finalrenamer/index.html">Final Renamer</a>
+          <a href="https://github.com/carreirodev" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 WPC Solutions.</span>
+        <a href="mailto:contact@wpcsolutions.com.br">contact@wpcsolutions.com.br</a>
       </div>
     </footer>
-
     <script src="../main.js"></script>
   </body>
 </html>
-

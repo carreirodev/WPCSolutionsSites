@@ -3,57 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mensagem Enviada - WPC Solutions</title>
+    <title>Mensagem enviada | WPC Solutions</title>
     <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#f4f3ef" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#151515" media="(prefers-color-scheme: dark)" />
     <link rel="canonical" href="https://wpcsolutions.com.br/obrigado.html" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
-    />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/svg+xml" href="assets/WPCvertWhite.svg" />
+    <link rel="icon" type="image/svg+xml" href="assets/WPCvertDark.svg" />
   </head>
-  <body>
-    <nav class="navbar">
-      <div class="container nav-content">
-        <a href="index.html" class="logo">
-          <img
-            src="assets/WPChorizWhite.svg"
-            alt="WPC Solutions"
-            width="240"
-            height="40"
-            decoding="async"
-          />
+  <body class="thanks-page">
+    <header class="site-header">
+      <nav class="navbar" aria-label="Navegação principal">
+        <a href="index.html" class="nav-logo" aria-label="WPC Solutions, início">
+          <img class="logo-light" src="assets/WPChorizDark.svg" alt="WPC Solutions" width="190" height="68" />
+          <img class="logo-dark" src="assets/WPChorizWhite.svg" alt="" width="190" height="68" />
         </a>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
-    <section class="hero">
-      <img
-        src="assets/wpc-hero-bg.png"
-        alt=""
-        class="hero-bg"
-        width="1024"
-        height="1024"
-        decoding="async"
-      />
-      <div class="container hero-content reveal">
-        <span class="hero-tag">OBRIGADO</span>
-        <h1 class="hero-title">Recebemos sua mensagem</h1>
-        <p class="hero-subtitle">
-          Vamos responder o mais rápido possível. Enquanto isso, você pode
-          conhecer o Final Renamer.
-        </p>
-        <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap">
-          <a href="index.html" class="btn-primary">Voltar ao Site</a>
-          <a href="finalrenamer/index.html" class="btn-contact">Final Renamer</a>
-        </div>
+    <main class="thanks-main">
+      <p class="eyebrow">Mensagem enviada</p>
+      <h1>Recebemos seu contato.</h1>
+      <p>Vamos analisar sua mensagem e responder o mais breve possível.</p>
+      <div class="thanks-actions">
+        <a href="index.html" class="button button-primary">Voltar ao site</a>
+        <a href="finalrenamer/index.html" class="button button-secondary">Ver Final Renamer</a>
       </div>
-    </section>
-
-    <script src="main.js"></script>
+    </main>
   </body>
 </html>
-

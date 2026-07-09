@@ -3,139 +3,138 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apps Mobile - WPC Solutions</title>
-    <meta
-      name="description"
-      content="Desenvolvimento de aplicativos mobile com foco em performance, UX e integração com serviços."
-    />
+    <title>Desenvolvimento de Apps Mobile | WPC Solutions</title>
+    <meta name="description" content="Aplicativos para iOS e Android com produto, engenharia, integrações e publicação acompanhados pela WPC Solutions." />
+    <meta name="theme-color" content="#f4f3ef" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#151515" media="(prefers-color-scheme: dark)" />
     <link rel="canonical" href="https://wpcsolutions.com.br/services/apps-mobile.html" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
-    />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="WPC Solutions" />
+    <meta property="og:title" content="Desenvolvimento de Apps Mobile | WPC Solutions" />
+    <meta property="og:description" content="Aplicativos rápidos, claros e preparados para evoluir." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wpcsolutions.com.br/services/apps-mobile.html" />
     <link rel="stylesheet" href="../styles.css" />
-    <link rel="icon" type="image/svg+xml" href="../assets/WPCvertWhite.svg" />
+    <link rel="stylesheet" href="../internal.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets/WPCvertDark.svg" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="container nav-content">
-        <a href="../index.html" class="logo">
-          <img
-            src="../assets/WPChorizWhite.svg"
-            alt="WPC Solutions"
-            width="240"
-            height="40"
-            decoding="async"
-          />
+    <a class="skip-link" href="#main">Ir para o conteúdo</a>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Navegação principal">
+        <a href="../index.html" class="nav-logo" aria-label="WPC Solutions, início">
+          <img class="logo-light" src="../assets/WPChorizDark.svg" alt="WPC Solutions" width="190" height="68" />
+          <img class="logo-dark" src="../assets/WPChorizWhite.svg" alt="" width="190" height="68" />
         </a>
-        <button
-          class="nav-toggle"
-          id="navToggle"
-          type="button"
-          aria-label="Abrir menu"
-          aria-controls="navLinks"
-          aria-expanded="false"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menu" aria-controls="navLinks" aria-expanded="false">
+          <span></span><span></span><span></span>
         </button>
         <ul class="nav-links" id="navLinks">
-          <li><a href="../index.html#services">Serviços</a></li>
+          <li><a href="../index.html#services" aria-current="page">Serviços</a></li>
+          <li><a href="../index.html#about">Sobre</a></li>
           <li><a href="../portfolio/index.html">Portfólio</a></li>
           <li><a href="../finalrenamer/index.html">Final Renamer</a></li>
-          <li><a href="../index.html#contact" class="btn-contact">Contato</a></li>
+          <li><a href="../index.html#contact" class="nav-cta">Fale conosco</a></li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+      <div class="nav-overlay" id="navOverlay"></div>
+    </header>
 
-    <section class="hero hero-sm">
-      <img
-        src="../assets/wpc-hero-bg.png"
-        alt=""
-        class="hero-bg"
-        width="1024"
-        height="1024"
-        decoding="async"
-        fetchpriority="high"
-      />
-      <div class="container hero-content reveal">
-        <span class="hero-tag">SERVIÇO</span>
-        <h1 class="hero-title">Apps Mobile</h1>
-        <p class="hero-subtitle">
-          Apps rápidos, intuitivos e prontos para escalar — do MVP ao produto
-          completo.
-        </p>
-        <a href="../index.html#contact" class="btn-primary">Falar com a WPC</a>
-      </div>
-    </section>
-
-    <section class="page-section">
-      <div class="container">
-        <div class="section-header reveal">
-          <h2 class="section-title">O que entregamos</h2>
-          <p>
-            Foco em performance, experiência do usuário e integração com
-            serviços.
-          </p>
-        </div>
-
-        <div class="page-grid">
-          <div class="page-card reveal">
-            <h3>Design centrado no usuário</h3>
-            <p>Fluxos claros, telas consistentes e microinterações.</p>
-          </div>
-          <div class="page-card reveal">
-            <h3>Integrações</h3>
-            <p>APIs, autenticação, pagamentos, push notifications e analytics.</p>
-          </div>
-          <div class="page-card reveal">
-            <h3>Entrega contínua</h3>
-            <p>Builds, releases e manutenção com ciclos curtos e previsíveis.</p>
+    <main id="main">
+      <section class="subpage-hero">
+        <div class="subpage-copy reveal">
+          <p class="eyebrow">Aplicativos mobile</p>
+          <h1>Seu produto na tela que acompanha o cliente.</h1>
+          <p>Planejamos, desenvolvemos e publicamos aplicativos para iOS e Android com uma base pronta para evoluir.</p>
+          <div class="subpage-actions">
+            <a href="../index.html#contact" class="button button-primary">Fale conosco</a>
+            <a href="#delivery" class="button button-secondary">Como entregamos</a>
           </div>
         </div>
-      </div>
-    </section>
+        <figure class="subpage-media reveal delay-100">
+          <img src="https://picsum.photos/seed/wpc-mobile-product/1100/1300" alt="" width="1100" height="1300" fetchpriority="high" />
+          <figcaption>Experiência consistente do primeiro acesso ao uso diário.</figcaption>
+        </figure>
+      </section>
 
-    <footer>
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-logo">
-            <img
-              src="../assets/WPChorizWhite.svg"
-              alt="WPC Solutions"
-              width="240"
-              height="50"
-              decoding="async"
-            />
-            <p style="color: #666; max-width: 300px; margin-top: 10px">
-              Desenvolvendo o futuro, uma linha de código por vez.
-            </p>
-          </div>
-          <div class="footer-links">
-            <h4>Empresa</h4>
+      <div class="page-band">
+        <div class="page-band-inner">
+          <span>iOS e Android</span>
+          <span>Flutter e .NET</span>
+          <span>APIs e pagamentos</span>
+          <span>Publicação nas lojas</span>
+        </div>
+      </div>
+
+      <section id="delivery" class="feature-layout section-shell">
+        <div class="feature-summary reveal">
+          <h2>Aplicativos pensados como produto.</h2>
+          <p>Decisões de interface, tecnologia e operação partem da rotina real de quem vai usar o app.</p>
+        </div>
+        <div class="feature-list">
+          <article class="feature-item reveal">
+            <span>01</span>
+            <div><h3>Escopo e experiência</h3><p>Mapeamos jornadas, prioridades e uma primeira versão que já entrega valor.</p></div>
+          </article>
+          <article class="feature-item reveal">
+            <span>02</span>
+            <div><h3>Aplicação e serviços</h3><p>Construímos telas, autenticação, dados, notificações e integrações necessárias.</p></div>
+          </article>
+          <article class="feature-item reveal">
+            <span>03</span>
+            <div><h3>Qualidade em dispositivos reais</h3><p>Validamos desempenho, acessibilidade e comportamento em diferentes tamanhos de tela.</p></div>
+          </article>
+          <article class="feature-item reveal">
+            <span>04</span>
+            <div><h3>Lançamento acompanhado</h3><p>Preparamos builds, publicação nas lojas e uma rotina segura de atualizações.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="detail-section section-shell">
+        <div class="detail-heading reveal">
+          <h2>Da primeira versão à operação contínua.</h2>
+          <p>O projeto não termina quando o aplicativo chega à loja.</p>
+        </div>
+        <div class="detail-grid">
+          <article class="detail-card detail-card-accent reveal">
+            <h3>Base técnica para crescer sem recomeçar.</h3>
+            <p>Arquitetura, observabilidade e integrações são dimensionadas para o estágio atual e para a próxima etapa.</p>
             <ul>
-              <li><a href="../index.html#about">Sobre Nós</a></li>
-              <li><a href="../portfolio/index.html">Portfólio</a></li>
-              <li><a href="../index.html#contact">Contato</a></li>
+              <li>Componentes reutilizáveis</li>
+              <li>Integração com APIs e serviços</li>
+              <li>Monitoramento de falhas</li>
             </ul>
-          </div>
-          <div class="footer-links">
-            <h4>Produtos</h4>
-            <ul>
-              <li><a href="../finalrenamer/index.html">Final Renamer</a></li>
-            </ul>
-          </div>
+          </article>
+          <article class="detail-card reveal delay-100">
+            <h3>Evolução orientada pelo uso.</h3>
+            <p>Depois do lançamento, dados e feedback ajudam a priorizar correções e novas funcionalidades.</p>
+          </article>
         </div>
-        <div class="copyright">
-          &copy; 2026 WPC Solutions. Todos os direitos reservados.
+      </section>
+
+      <section class="page-cta reveal">
+        <h2>Vamos tirar seu aplicativo do papel.</h2>
+        <p>Conte o estágio da ideia, o público e o que o app precisa resolver.</p>
+        <a href="../index.html#contact" class="button button-primary">Fale conosco</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-main">
+        <a href="../index.html" class="footer-logo" aria-label="WPC Solutions, início">
+          <img class="logo-light" src="../assets/WPChorizDark.svg" alt="WPC Solutions" width="190" height="68" />
+          <img class="logo-dark" src="../assets/WPChorizWhite.svg" alt="" width="190" height="68" />
+        </a>
+        <p>Software bem pensado. Produto bem construído.</p>
+        <div class="footer-links">
+          <a href="../index.html#services">Serviços</a><a href="../index.html#about">Sobre</a>
+          <a href="../portfolio/index.html">Portfólio</a><a href="../finalrenamer/index.html">Final Renamer</a>
+          <a href="https://github.com/carreirodev" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
+      <div class="footer-bottom"><span>&copy; 2026 WPC Solutions.</span><a href="mailto:contact@wpcsolutions.com.br">contact@wpcsolutions.com.br</a></div>
     </footer>
-
     <script src="../main.js"></script>
   </body>
 </html>
-

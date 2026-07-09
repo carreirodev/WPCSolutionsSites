@@ -6,9 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Mobile Navigation Toggle
   initMobileNav();
 
-  // Navbar Scroll Effect
-  initNavbarScroll();
-
   // Scroll Reveal Animations
   initScrollReveal();
 
@@ -29,6 +26,9 @@ function initMobileNav() {
     navToggle.addEventListener("click", () => {
       navLinks.classList.toggle("active");
       navToggle.classList.toggle("active");
+      const expanded = navLinks.classList.contains("active");
+      navToggle.setAttribute("aria-expanded", expanded ? "true" : "false");
+      navToggle.setAttribute("aria-label", expanded ? "Fechar menu" : "Abrir menu");
     });
 
     // Close menu when clicking a link
@@ -36,24 +36,9 @@ function initMobileNav() {
       link.addEventListener("click", () => {
         navLinks.classList.remove("active");
         navToggle.classList.remove("active");
+        navToggle.setAttribute("aria-expanded", "false");
+        navToggle.setAttribute("aria-label", "Abrir menu");
       });
-    });
-  }
-}
-
-/**
- * Navbar Scroll Effect
- */
-function initNavbarScroll() {
-  const navbar = document.getElementById("navbar");
-
-  if (navbar) {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 50) {
-        navbar.classList.add("scrolled");
-      } else {
-        navbar.classList.remove("scrolled");
-      }
     });
   }
 }
@@ -63,6 +48,11 @@ function initNavbarScroll() {
  */
 function initScrollReveal() {
   const revealElements = document.querySelectorAll(".reveal");
+
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    revealElements.forEach((element) => element.classList.add("active"));
+    return;
+  }
 
   const observerOptions = {
     root: null,

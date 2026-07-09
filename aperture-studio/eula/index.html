@@ -18,25 +18,17 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://wpcsolutions.com.br/aperture-studio/eula/" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap"
-    />
     <link rel="stylesheet" href="../../styles.css" />
-    <link rel="icon" type="image/webp" href="../../assets/icon.webp" />
+    <link rel="stylesheet" href="../legal.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets/aperture-icon.svg" />
   </head>
-  <body>
-    <nav class="navbar">
-      <div class="navbar-inner">
+  <body class="legal-document">
+    <header class="site-header">
+      <nav class="navbar" aria-label="Main navigation">
+        <div class="navbar-inner">
         <a href="../../index.html" class="nav-logo">
-          <img
-            src="../../assets/WPChorizDark.webp"
-            alt="WPC Solutions"
-            height="52"
-            decoding="async"
-          />
+          <img class="logo-light" src="../../assets/WPChorizDark.svg" alt="WPC Solutions" width="190" height="68" />
+          <img class="logo-dark" src="../../assets/WPChorizWhite.svg" alt="" width="190" height="68" />
         </a>
         <button
           class="nav-toggle"
@@ -57,9 +49,10 @@
           <li><a href="../../finalrenamer/index.html">Final Renamer</a></li>
           <li><a href="../../index.html#contact" class="nav-cta">Fale conosco</a></li>
         </ul>
-      </div>
-    </nav>
-    <div class="nav-overlay" id="navOverlay"></div>
+        </div>
+      </nav>
+      <div class="nav-overlay" id="navOverlay"></div>
+    </header>
 
     <main class="legal-page">
       <a href="../legal/" class="legal-back">&larr; Legal</a>
@@ -225,12 +218,13 @@
       </article>
     </main>
 
-    <footer class="footer">
+    <footer class="footer legal-footer">
       <div class="footer-inner">
         <div class="footer-grid">
           <div class="footer-brand">
             <div class="footer-logo">
-              <img src="../../assets/WPChorizWhite.webp" alt="WPC Solutions" />
+              <img class="logo-light" src="../../assets/WPChorizDark.svg" alt="WPC Solutions" />
+              <img class="logo-dark" src="../../assets/WPChorizWhite.svg" alt="" />
             </div>
             <p>Desenvolvendo o futuro, uma linha de código por vez.</p>
           </div>
@@ -259,10 +253,7 @@
         </div>
         <div class="footer-bottom">
           <span>&copy; 2026 WPC Solutions. Todos os direitos reservados.</span>
-          <span style="display:flex;align-items:center;gap:6px;">
-            <span style="width:6px;height:6px;border-radius:50%;background:var(--primary-500);"></span>
-            Feito com propósito.
-          </span>
+          <span>Aperture Studio AI</span>
         </div>
       </div>
     </footer>

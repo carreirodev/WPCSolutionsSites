@@ -530,6 +530,9 @@ a {
   right: 8%;
   bottom: -8%;
   width: min(44%, 290px);
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
   transform: rotate(7deg);
   filter: drop-shadow(0 30px 35px rgba(23, 33, 95, 0.2));
 }
@@ -1203,6 +1206,17 @@ a {
 
   .product {
     min-height: 470px;
+  }
+
+  .product-aperture {
+    min-height: 560px;
+  }
+
+  .product-aperture > img {
+    right: 22px;
+    bottom: 18px;
+    width: clamp(160px, 52vw, 190px);
+    transform: rotate(4deg);
   }
 
   .about-facts {

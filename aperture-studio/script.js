@@ -74,12 +74,6 @@ function initSmoothNavigation() {
           target.getBoundingClientRect().top + window.scrollY - (navbar?.offsetHeight || 60) - 20,
         );
 
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      window.scrollTo(0, destination);
-      window.history.pushState(null, "", targetId);
-      return;
-    }
-
     animateScrollTo(destination, 1100, () => {
       window.history.pushState(null, "", targetId);
     });

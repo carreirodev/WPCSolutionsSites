@@ -538,6 +538,7 @@ a {
 }
 
 .product-renamer {
+  padding-bottom: 230px;
   background: var(--surface-strong);
 }
 
@@ -546,7 +547,7 @@ a {
   right: 0;
   bottom: 0;
   width: 78%;
-  max-height: 250px;
+  height: 190px;
   border-radius: var(--radius) 0 0 0;
   object-fit: cover;
   object-position: center;
@@ -570,23 +571,48 @@ a {
   position: relative;
   align-self: stretch;
   min-height: 478px;
+  padding: clamp(30px, 5vw, 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 34px;
   overflow: hidden;
+  border-left: 1px solid rgba(83, 142, 188, 0.24);
+  background:
+    radial-gradient(circle at 68% 28%, rgba(255, 255, 255, 0.92), transparent 13rem),
+    linear-gradient(145deg, rgba(147, 211, 255, 0.58), rgba(73, 145, 203, 0.16));
 }
 
-.product-remapper-banner {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 58% center;
-  mask-image: linear-gradient(to right, transparent 0, #000 20%);
-  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 20%);
+.product-shortcut {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #075697;
+  font-size: clamp(1rem, 1.8vw, 1.3rem);
+  font-weight: 800;
+}
+
+.product-shortcut kbd {
+  padding: 13px 16px;
+  border: 1px solid #8eb5d2;
+  border-bottom-width: 4px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #163852;
+  font: inherit;
+  white-space: nowrap;
+  box-shadow: 0 12px 28px rgba(42, 96, 138, 0.14);
+}
+
+.product-shortcut span {
+  font-size: 1.7em;
+  font-weight: 500;
 }
 
 .product-remapper-icon {
-  position: absolute;
-  right: 8%;
-  bottom: 9%;
-  width: clamp(96px, 12vw, 150px);
+  position: static;
+  width: clamp(120px, 14vw, 180px);
   height: auto;
   border: 1px solid rgba(255, 255, 255, 0.76);
   border-radius: var(--radius);
@@ -1142,6 +1168,8 @@ a {
 
   .product-remapper-visual {
     min-height: 300px;
+    border-top: 1px solid rgba(83, 142, 188, 0.24);
+    border-left: 0;
   }
 
   .services-intro {
@@ -1279,15 +1307,13 @@ a {
     min-height: 280px;
   }
 
-  .product-remapper-banner {
-    mask-image: linear-gradient(to bottom, transparent 0, #000 18%);
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 18%);
+  .product-remapper-icon {
+    width: 100px;
   }
 
-  .product-remapper-icon {
-    right: 22px;
-    bottom: 22px;
-    width: 100px;
+  .product-shortcut {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .about-facts {

@@ -3,45 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- SEO Meta Tags -->
     <title>Final Renamer - Renomeação Inteligente de Arquivos com IA</title>
-    <meta
-      name="description"
-      content="Transforme a forma como você renomeia arquivos com Final Renamer – a ferramenta definitiva de renomeação em massa com inteligência artificial."
-    />
-    <meta
-      name="keywords"
-      content="renomear arquivos, batch rename, renomeação em massa, IA, EXIF, metadados, fotos, músicas, organização de arquivos"
-    />
+    <meta name="description" content="Renomeie fotos, músicas e documentos em massa com IA, metadados e preview em tempo real." />
+    <meta name="keywords" content="renomear arquivos, batch rename, renomeação em massa, IA, EXIF, metadados, fotos, músicas" />
     <meta name="author" content="WPC Solutions" />
+    <meta name="theme-color" content="#061326" />
     <link rel="canonical" href="https://wpcsolutions.com.br/finalrenamer/" />
-
-    <!-- Open Graph -->
-    <meta
-      property="og:title"
-      content="Final Renamer - Renomeação Inteligente de Arquivos"
-    />
-    <meta
-      property="og:description"
-      content="A ferramenta definitiva de renomeação em massa com IA. Organize fotos, músicas e documentos de forma inteligente."
-    />
+    <meta property="og:title" content="Final Renamer - Dê nomes melhores aos seus arquivos" />
+    <meta property="og:description" content="Renomeação em massa com IA, metadados e controle total." />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://wpcsolutions.com.br/finalrenamer/"
-    />
+    <meta property="og:url" content="https://wpcsolutions.com.br/finalrenamer/" />
     <meta property="og:site_name" content="WPC Solutions" />
     <meta property="og:locale" content="pt_BR" />
-    <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:title"
-      content="Final Renamer - Renomeação Inteligente de Arquivos"
-    />
-    <meta
-      name="twitter:description"
-      content="A ferramenta definitiva de renomeação em massa com IA. Organize fotos, músicas e documentos de forma inteligente."
-    />
+    <meta property="og:image" content="https://wpcsolutions.com.br/finalrenamer/assets/hero-bg.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Final Renamer - Renomeação Inteligente" />
+    <meta name="twitter:description" content="Organize arquivos em massa com IA e metadados." />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -52,399 +29,200 @@
         "url": "https://wpcsolutions.com.br/finalrenamer/",
         "description": "Ferramenta de renomeação em massa com IA para organizar fotos, músicas e documentos.",
         "downloadUrl": "https://apps.microsoft.com/detail/9nx739bh6hv8?hl=pt-BR&gl=BR",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "BRL"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "WPC Solutions",
-          "url": "https://wpcsolutions.com.br/"
-        }
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BRL" },
+        "publisher": { "@type": "Organization", "name": "WPC Solutions", "url": "https://wpcsolutions.com.br/" }
       }
     </script>
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="../assets/WPCvertDark.svg" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-    />
-
-    <!-- Styles -->
+    <link rel="icon" type="image/png" href="assets/icon.png" />
+    <link rel="preload" as="image" href="assets/hero-bg.jpg" />
+    <link rel="preload" as="image" href="assets/icon.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
+    <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+    <nav class="navbar" id="navbar" aria-label="Navegação principal">
       <div class="container nav-content">
-        <a href="#hero" class="nav-brand">
-          <span class="app-mark" aria-hidden="true">FR</span>
+        <a href="#hero" class="nav-brand" aria-label="Final Renamer, início">
+          <img src="assets/icon.png" alt="" width="42" height="42" />
           <span>Final Renamer</span>
         </a>
-
         <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menu" aria-controls="navLinks" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span></span><span></span><span></span>
         </button>
-
         <ul class="nav-links" id="navLinks">
-          <li><a href="#trust">Confiança</a></li>
           <li><a href="#features">Recursos</a></li>
-          <li><a href="#how-it-works">Como Funciona</a></li>
-          <li><a href="#download">Download</a></li>
+          <li><a href="#how-it-works">Como funciona</a></li>
+          <li><a href="#trust">Privacidade</a></li>
           <li><a href="#faq">FAQ</a></li>
+          <li><a class="nav-download" href="#download">Baixar grátis</a></li>
         </ul>
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-      <div class="container hero-content">
-        <div class="hero-text">
-          <div class="hero-badge">
-            <span>✨</span>
-            <span>Powered by AI</span>
-          </div>
-
-          <h1 class="hero-title">
-            Renomeie arquivos com <span class="highlight">inteligência</span>
-          </h1>
-
-          <p class="hero-description">
-            Transforme a forma como você organiza arquivos. O Final Renamer usa
-            inteligência artificial para sugerir nomes inteligentes e
-            automatizar a renomeação em massa.
-          </p>
-
-          <div class="hero-buttons">
-            <a
-              href="https://apps.microsoft.com/detail/9nx739bh6hv8?hl=pt-BR&gl=BR"
-              class="btn btn-primary btn-lg"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-track="ms_store_primary"
-            >
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path
-                  d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"
-                />
-              </svg>
-              Baixar na Microsoft Store
-            </a>
-
-            <a href="#features" class="btn btn-secondary btn-lg">
-              Ver Recursos
-            </a>
-          </div>
-        </div>
-
-        <div class="hero-image">
-          <div class="app-mark app-mark-hero" aria-label="Final Renamer">FR</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="trust" id="trust">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-subtitle">Transparência</p>
-          <h2 class="section-title">Privacidade, controle e previsibilidade</h2>
-          <p class="section-description">
-            Uma experiência moderna de renomeação com recursos avançados, sem
-            complicação.
-          </p>
-        </div>
-
-        <div class="trust-grid">
-          <div class="trust-card reveal">
-            <h3 class="trust-title">IA local (Ollama)</h3>
-            <p class="trust-text">
-              Use modelos locais para sugestões de nomes com mais privacidade e
-              controle.
-            </p>
-          </div>
-
-          <div class="trust-card reveal">
-            <h3 class="trust-title">Pré-visualização em tempo real</h3>
-            <p class="trust-text">
-              Veja o resultado antes de aplicar e reduza riscos em renomeações
-              em massa.
-            </p>
-          </div>
-
-          <div class="trust-card reveal">
-            <h3 class="trust-title">Distribuição pela Microsoft Store</h3>
-            <p class="trust-text">
-              Instalação simples, atualizações automáticas e um canal confiável
-              de distribuição.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features" id="features">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-subtitle">Recursos Poderosos</p>
-          <h2 class="section-title">
-            Tudo que você precisa para organizar seus arquivos
-          </h2>
-          <p class="section-description">
-            Do básico ao avançado, o Final Renamer oferece ferramentas completas
-            para qualquer necessidade de renomeação.
-          </p>
-        </div>
-
-        <div class="features-grid">
-          <!-- Feature 1: AI -->
-          <div class="feature-card reveal">
-            <div class="feature-icon">🤖</div>
-            <h3 class="feature-title">Renomeação com IA</h3>
-            <p class="feature-description">
-              Deixe a inteligência artificial analisar seus arquivos e sugerir
-              nomes semânticos e organizados automaticamente. Suporte para
-              modelos locais via Ollama para total privacidade.
-            </p>
-          </div>
-
-          <!-- Feature 2: Photos -->
-          <div class="feature-card reveal">
-            <div class="feature-icon">📸</div>
-            <h3 class="feature-title">Metadados EXIF</h3>
-            <p class="feature-description">
-              Renomeie fotos usando dados embutidos: modelo da câmera, data de
-              captura, localização GPS e muito mais.
-            </p>
-          </div>
-
-          <!-- Feature 3: Music -->
-          <div class="feature-card reveal">
-            <div class="feature-icon">🎵</div>
-            <h3 class="feature-title">Tags de Música</h3>
-            <p class="feature-description">
-              Organize sua biblioteca musical renomeando arquivos pelo artista,
-              álbum, título e número da faixa.
-            </p>
-          </div>
-
-          <!-- Feature 4: Date -->
-          <div class="feature-card reveal">
-            <div class="feature-icon">📅</div>
-            <h3 class="feature-title">Formatação de Datas</h3>
-            <p class="feature-description">
-              Insira datas de criação, modificação ou formatos personalizados
-              nos nomes dos seus arquivos.
-            </p>
-          </div>
-
-          <!-- Feature 5: Numbering -->
-          <div class="feature-card reveal">
-            <div class="feature-icon">🔢</div>
-            <h3 class="feature-title">Numeração Inteligente</h3>
-            <p class="feature-description">
-              Adicione sequências numéricas com padding, prefixos, sufixos e
-              incrementos totalmente customizáveis.
-            </p>
-          </div>
-
-          <!-- Feature 6: Text -->
-          <div class="feature-card reveal">
-            <div class="feature-icon">✏️</div>
-            <h3 class="feature-title">Operações de Texto</h3>
-            <p class="feature-description">
-              Substitua, insira, remova ou transforme qualquer texto nos nomes
-              com poderosas opções de edição.
-            </p>
-          </div>
-
-          <!-- Feature 7: Preview -->
-          <div class="feature-card reveal">
-            <div class="feature-icon">⚡</div>
-            <h3 class="feature-title">Preview em Tempo Real</h3>
-            <p class="feature-description">
-              Veja exatamente como seus arquivos serão renomeados antes de
-              aplicar qualquer mudança.
-            </p>
-          </div>
-
-          <!-- Feature 8: Drag & Drop -->
-          <div class="feature-card reveal">
-            <div class="feature-icon">🎯</div>
-            <h3 class="feature-title">Drag & Drop</h3>
-            <p class="feature-description">
-              Arraste e solte arquivos ou pastas para começar instantaneamente.
-              Interface moderna e intuitiva.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- How It Works Section -->
-    <section class="how-it-works" id="how-it-works">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-subtitle">Simples & Rápido</p>
-          <h2 class="section-title">Como funciona</h2>
-          <p class="section-description">
-            Renomeie centenas de arquivos em apenas 3 passos simples.
-          </p>
-        </div>
-
-        <div class="steps-grid">
-          <div class="step-card reveal">
-            <div class="step-number">1</div>
-            <h3 class="step-title">Arraste seus arquivos</h3>
-            <p>
-              Arraste e solte arquivos ou pastas diretamente na interface do
-              app.
-            </p>
-            <div class="step-connector"></div>
-          </div>
-
-          <div class="step-card reveal">
-            <div class="step-number">2</div>
-            <h3 class="step-title">Configure as regras</h3>
-            <p>
-              Escolha entre dezenas de opções de renomeação ou deixe a IA
-              decidir.
-            </p>
-            <div class="step-connector"></div>
-          </div>
-
-          <div class="step-card reveal">
-            <div class="step-number">3</div>
-            <h3 class="step-title">Aplique as mudanças</h3>
-            <p>
-              Visualize o resultado e aplique. Todos os seus arquivos renomeados
-              em segundos!
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="faq" id="faq">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-subtitle">Dúvidas</p>
-          <h2 class="section-title">Perguntas frequentes</h2>
-          <p class="section-description">
-            Respostas rápidas para ajudar você a começar.
-          </p>
-        </div>
-
-        <div class="faq-list">
-          <details class="faq-item reveal">
-            <summary>O Final Renamer é gratuito?</summary>
-            <div class="faq-answer">
-              Sim. O download é feito pela Microsoft Store.
+    <main id="main">
+      <section class="hero" id="hero">
+        <div class="hero-backdrop" aria-hidden="true"></div>
+        <div class="container hero-content">
+          <div class="hero-copy">
+            <p class="eyebrow">Organização com um toque de magia</p>
+            <h1>Dê nomes melhores aos seus arquivos.</h1>
+            <p class="hero-description">IA, metadados e regras precisas para organizar tudo em poucos cliques.</p>
+            <div class="hero-actions">
+              <a href="https://apps.microsoft.com/detail/9nx739bh6hv8?hl=pt-BR&gl=BR" class="button button-primary" target="_blank" rel="noopener noreferrer" data-track="ms_store_primary">
+                Baixar para Windows
+                <span aria-hidden="true">↗</span>
+              </a>
+              <a href="#features" class="button button-ghost">Conhecer recursos</a>
             </div>
-          </details>
-
-          <details class="faq-item reveal">
-            <summary>
-              Posso usar IA local sem enviar arquivos para a nuvem?
-            </summary>
-            <div class="faq-answer">
-              Sim. Há suporte para modelos locais via Ollama, mantendo mais
-              controle e privacidade.
-            </div>
-          </details>
-
-          <details class="faq-item reveal">
-            <summary>Consigo desfazer uma renomeação?</summary>
-            <div class="faq-answer">
-              Recomenda-se sempre validar pelo preview antes de aplicar e manter
-              backup quando necessário.
-            </div>
-          </details>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section" id="download">
-      <div class="container cta-content reveal">
-        <h2 class="cta-title">Pronto para organizar seus arquivos?</h2>
-        <p class="cta-description">
-          Baixe gratuitamente o Final Renamer na Microsoft Store e comece a
-          renomear de forma inteligente hoje mesmo.
-        </p>
+      <section class="promise" id="trust">
+        <div class="container promise-grid">
+          <div class="promise-lead reveal">
+            <span class="line-mark" aria-hidden="true"></span>
+            <h2>Você continua no controle.</h2>
+          </div>
+          <div class="promise-item reveal">
+            <strong>IA local com Ollama</strong>
+            <p>Gere sugestões sem enviar seus arquivos para a nuvem.</p>
+          </div>
+          <div class="promise-item reveal">
+            <strong>Preview antes de aplicar</strong>
+            <p>Confira cada novo nome antes de confirmar a mudança.</p>
+          </div>
+          <div class="promise-item reveal">
+            <strong>Microsoft Store</strong>
+            <p>Instalação confiável e atualizações automáticas.</p>
+          </div>
+        </div>
+      </section>
 
-        <div class="cta-buttons">
-          <a
-            href="https://apps.microsoft.com/detail/9nx739bh6hv8?hl=pt-BR&gl=BR"
-            class="ms-store-badge"
-            target="_blank"
-            rel="noopener noreferrer"
-            data-track="ms_store_badge"
-          >
-            <img
-              src="../aperture-studio/assets/DFTMS.png"
-              alt="Disponível na Microsoft Store"
-              width="830"
-              height="242"
-              loading="lazy"
-              decoding="async"
-            />
+      <section class="features" id="features">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2>Uma caixa de ferramentas para cada coleção.</h2>
+            <p>Combine regras clássicas com IA para chegar ao nome certo, sem trabalho repetitivo.</p>
+          </div>
+
+          <div class="feature-bento">
+            <article class="feature feature-ai reveal">
+              <span class="feature-symbol" aria-hidden="true">AI</span>
+              <div>
+                <h3>Renomeação com IA</h3>
+                <p>Analise o contexto e crie nomes claros, consistentes e úteis com modelos locais.</p>
+              </div>
+              <div class="magic-name" aria-hidden="true">
+                <span>IMG_2847.JPG</span>
+                <span>viagem-serra-azul.jpg</span>
+              </div>
+            </article>
+
+            <article class="feature feature-photo reveal">
+              <span class="feature-symbol" aria-hidden="true">EXIF</span>
+              <h3>Fotos que contam sua história</h3>
+              <p>Use câmera, data, localização e outros metadados da captura.</p>
+            </article>
+
+            <article class="feature feature-music reveal">
+              <span class="feature-symbol" aria-hidden="true">TAG</span>
+              <h3>Música em ordem</h3>
+              <p>Organize por artista, álbum, faixa e título.</p>
+            </article>
+
+            <article class="feature feature-rules reveal">
+              <span class="feature-symbol" aria-hidden="true">123</span>
+              <h3>Regras do seu jeito</h3>
+              <p>Numere, substitua, remova, insira datas, prefixos e sufixos.</p>
+            </article>
+
+            <article class="feature feature-drop reveal">
+              <div>
+                <span class="feature-symbol" aria-hidden="true">+</span>
+                <h3>Arraste. Visualize. Pronto.</h3>
+                <p>Adicione arquivos e pastas com drag and drop e veja o resultado em tempo real.</p>
+              </div>
+              <img src="assets/icon.png" alt="" width="220" height="220" loading="lazy" />
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-it-works" id="how-it-works">
+        <div class="container">
+          <p class="eyebrow reveal">Do caos à ordem</p>
+          <h2 class="process-title reveal">Três movimentos. Centenas de arquivos resolvidos.</h2>
+          <div class="process">
+            <article class="process-step reveal">
+              <span aria-hidden="true">01</span>
+              <h3>Solte os arquivos</h3>
+              <p>Arraste arquivos ou pastas para a janela do Final Renamer.</p>
+            </article>
+            <article class="process-step reveal">
+              <span aria-hidden="true">02</span>
+              <h3>Crie a transformação</h3>
+              <p>Combine regras, metadados ou deixe a IA sugerir.</p>
+            </article>
+            <article class="process-step reveal">
+              <span aria-hidden="true">03</span>
+              <h3>Confira e aplique</h3>
+              <p>Revise o preview e confirme quando tudo estiver certo.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <div class="container faq-layout">
+          <div class="faq-intro reveal">
+            <h2>Antes de começar</h2>
+            <p>Respostas diretas para usar o Final Renamer com tranquilidade.</p>
+          </div>
+          <div class="faq-list">
+            <details class="faq-item reveal">
+              <summary>O Final Renamer é gratuito?</summary>
+              <p>Sim. O download é gratuito e feito pela Microsoft Store.</p>
+            </details>
+            <details class="faq-item reveal">
+              <summary>Posso usar IA sem enviar arquivos à nuvem?</summary>
+              <p>Sim. O suporte ao Ollama permite usar modelos locais com mais privacidade.</p>
+            </details>
+            <details class="faq-item reveal">
+              <summary>Posso revisar antes de renomear?</summary>
+              <p>Sim. O preview mostra os nomes finais antes de qualquer alteração.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="download" id="download">
+        <div class="download-image" aria-hidden="true"></div>
+        <div class="container download-content reveal">
+          <img src="assets/icon.png" alt="" width="92" height="92" loading="lazy" />
+          <h2>Faça a bagunça desaparecer.</h2>
+          <p>Baixe gratuitamente e transforme sua próxima pasta em poucos minutos.</p>
+          <a href="https://apps.microsoft.com/detail/9nx739bh6hv8?hl=pt-BR&gl=BR" class="store-link" target="_blank" rel="noopener noreferrer" data-track="ms_store_badge">
+            <img src="../aperture-studio/assets/DFTMS.png" alt="Disponível na Microsoft Store" width="830" height="242" loading="lazy" decoding="async" />
           </a>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- Footer -->
     <footer class="footer">
       <div class="container footer-content">
-        <div class="footer-brand">
-          <a href="../index.html">
-            <img
-              src="../assets/WPChorizWhite.webp"
-              alt="WPC Solutions"
-              width="240"
-              height="48"
-              loading="lazy"
-              decoding="async"
-            />
-          </a>
-          <p class="footer-text">
-            © 2026 WPC Solutions. Todos os direitos reservados.
-          </p>
-        </div>
-
+        <a href="../index.html" class="wpc-brand">
+          <img src="../assets/WPChorizWhite.svg" alt="WPC Solutions" width="200" height="40" loading="lazy" />
+        </a>
+        <p>© 2026 WPC Solutions. Todos os direitos reservados.</p>
         <div class="footer-links">
-          <a
-            href="https://apps.microsoft.com/detail/9nx739bh6hv8"
-            target="_blank"
-            rel="noopener noreferrer"
-            data-track="ms_store_footer"
-            >Microsoft Store</a
-          >
-          <a
-            href="https://github.com/carreirodev"
-            target="_blank"
-            rel="noopener noreferrer"
-            data-track="github_footer"
-            >GitHub</a
-          >
+          <a href="https://apps.microsoft.com/detail/9nx739bh6hv8" target="_blank" rel="noopener noreferrer" data-track="ms_store_footer">Microsoft Store</a>
+          <a href="https://github.com/carreirodev" target="_blank" rel="noopener noreferrer" data-track="github_footer">GitHub</a>
         </div>
       </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+    <script src="script.js?v=3"></script>
   </body>
 </html>

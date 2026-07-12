@@ -318,22 +318,21 @@ a {
 }
 
 .hero-window {
-  height: min(68vh, 650px);
+  width: min(100%, 650px);
   max-width: 100%;
-  aspect-ratio: 450 / 768;
+  aspect-ratio: 1;
   overflow: hidden;
-  border: 1px solid rgba(77, 137, 186, 0.3);
+  border: 1px solid rgba(77, 137, 186, 0.22);
   border-radius: var(--radius);
-  background: var(--surface);
-  box-shadow: var(--shadow);
+  background: #06182f;
+  box-shadow: 0 28px 80px rgba(3, 14, 30, 0.32);
 }
 
 .hero-window img {
-  width: auto;
-  max-width: none;
-  height: 100%;
-  object-fit: contain;
-  object-position: left center;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
 .trust-bar {
@@ -905,7 +904,7 @@ a {
   }
 
   .hero-window {
-    height: min(38vh, 360px);
+    width: min(100%, 360px);
   }
 
   .trust-bar {

@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   initMobileNav();
+  initSmoothNavigation();
   initScrollReveal();
   initContactFormTracking();
 });
@@ -60,6 +61,65 @@ function initMobileNav() {
       closeMenu();
     }
   });
+}
+
+function initSmoothNavigation() {
+  document.addEventListener("click", (event) => {
+    const link = event.target.closest('a[href^="#"]');
+    if (!link) return;
+
+    const targetId = link.getAttribute("href");
+    const target = targetId ? document.querySelector(targetId) : null;
+    if (!target) return;
+
+    event.preventDefault();
+
+    const header = document.querySelector(".site-header");
+    const offset = targetId === "#top" ? 0 : (header?.offsetHeight || 76) + 24;
+    const destination = Math.max(
+      0,
+      target.getBoundingClientRect().top + window.scrollY - offset,
+    );
+
+    animateScrollTo(destination, 1100, () => {
+      window.history.pushState(null, "", targetId);
+    });
+  });
+}
+
+let activeScrollFrame = null;
+
+function animateScrollTo(destination, duration, onComplete) {
+  if (activeScrollFrame) cancelAnimationFrame(activeScrollFrame);
+
+  const root = document.documentElement;
+  const previousScrollBehavior = root.style.scrollBehavior;
+  const start = window.scrollY;
+  const distance = destination - start;
+  const startedAt = performance.now();
+
+  root.style.scrollBehavior = "auto";
+
+  const step = (now) => {
+    const progress = Math.min((now - startedAt) / duration, 1);
+    const eased =
+      progress < 0.5
+        ? 4 * progress * progress * progress
+        : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+
+    window.scrollTo(0, start + distance * eased);
+
+    if (progress < 1) {
+      activeScrollFrame = requestAnimationFrame(step);
+      return;
+    }
+
+    activeScrollFrame = null;
+    root.style.scrollBehavior = previousScrollBehavior;
+    onComplete?.();
+  };
+
+  activeScrollFrame = requestAnimationFrame(step);
 }
 
 function initScrollReveal() {

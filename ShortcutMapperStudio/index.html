@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shortcut Remapper Studio - Atalhos do Windows do seu jeito</title>
+    <meta
+      name="description"
+      content="Crie e gerencie remapeamentos de teclado no Windows com uma interface visual, regras por aplicativo e funcionamento local."
+    />
+    <meta
+      name="keywords"
+      content="remapear atalhos, atalhos de teclado, Windows, produtividade, remapeamento de teclado, hotkeys"
+    />
+    <meta name="author" content="WPC Solutions" />
+    <meta name="theme-color" content="#eef7ff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#101b2b" media="(prefers-color-scheme: dark)" />
+    <link rel="canonical" href="https://wpcsolutions.com.br/ShortcutMapperStudio/" />
+
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="WPC Solutions" />
+    <meta property="og:title" content="Shortcut Remapper Studio - Seus atalhos, suas regras" />
+    <meta
+      property="og:description"
+      content="Remapeie atalhos no Windows com controle visual, regras por aplicativo e privacidade local."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wpcsolutions.com.br/ShortcutMapperStudio/" />
+    <meta
+      property="og:image"
+      content="https://wpcsolutions.com.br/ShortcutMapperStudio/assets/hero-banner.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Shortcut Remapper Studio" />
+    <meta
+      name="twitter:description"
+      content="Atalhos do Windows ajustados ao seu fluxo de trabalho."
+    />
+    <meta
+      name="twitter:image"
+      content="https://wpcsolutions.com.br/ShortcutMapperStudio/assets/hero-banner.png"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Shortcut Remapper Studio",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Windows 10, Windows 11",
+        "url": "https://wpcsolutions.com.br/ShortcutMapperStudio/",
+        "image": "https://wpcsolutions.com.br/ShortcutMapperStudio/assets/icon.png",
+        "description": "Utilitário visual para criar, revisar e gerenciar remapeamentos de atalhos de teclado no Windows.",
+        "downloadUrl": "https://apps.microsoft.com/detail/9nkz25gpf21l?hl=pt-BR&gl=BR",
+        "offers": {
+          "@type": "Offer",
+          "price": "4.95",
+          "priceCurrency": "BRL"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "WPC Solutions",
+          "url": "https://wpcsolutions.com.br/"
+        }
+      }
+    </script>
+
+    <link rel="icon" type="image/png" href="assets/icon.png" />
+    <link rel="preload" as="image" href="assets/hero-banner.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Ir para o conteúdo</a>
+
+    <header class="site-header">
+      <nav class="navbar" aria-label="Navegação principal">
+        <a class="brand" href="#top" aria-label="Shortcut Remapper Studio, início">
+          <img src="assets/icon.png" alt="" width="44" height="44" />
+          <span>Shortcut Remapper <strong>Studio</strong></span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          type="button"
+          aria-label="Abrir menu"
+          aria-controls="navLinks"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#recursos">Recursos</a></li>
+          <li><a href="#interface">Interface</a></li>
+          <li><a href="#privacidade">Privacidade</a></li>
+          <li><a href="../index.html">WPC Solutions</a></li>
+          <li>
+            <a
+              class="store-cta"
+              href="https://apps.microsoft.com/detail/9nkz25gpf21l?hl=pt-BR&gl=BR"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-track="ms_store_nav"
+            >Ver na Microsoft Store</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-overlay" id="navOverlay"></div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Novo para Windows</p>
+          <h1>Seus atalhos.<br />Suas regras.</h1>
+          <p class="hero-intro">
+            Remapeie o teclado com controle visual, por aplicativo e sem depender de AutoHotkey.
+          </p>
+          <div class="hero-actions">
+            <a
+              class="button button-primary"
+              href="https://apps.microsoft.com/detail/9nkz25gpf21l?hl=pt-BR&gl=BR"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-track="ms_store_hero"
+            >Ver na Microsoft Store</a>
+            <a class="button button-secondary" href="#recursos">Conhecer recursos</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal delay-100">
+          <img
+            src="assets/hero-banner.png"
+            alt="Combinações de teclas sendo transformadas em novos atalhos"
+            width="1920"
+            height="1080"
+            fetchpriority="high"
+          />
+          <div class="hero-icon" aria-hidden="true">
+            <img src="assets/icon.png" alt="" width="300" height="300" />
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-bar" aria-label="Características principais">
+        <p>Compra única</p>
+        <p>Sem conta</p>
+        <p>Configuração local</p>
+        <p>Windows 10 e 11</p>
+      </section>
+
+      <section class="features section-shell" id="recursos" aria-labelledby="features-title">
+        <div class="section-heading reveal">
+          <h2 id="features-title">Um teclado que acompanha o seu jeito de trabalhar.</h2>
+          <p>Troque combinações difíceis por atalhos naturais e mantenha cada regra sob controle.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature feature-remap reveal">
+            <div class="key-demo" aria-hidden="true">
+              <kbd>Alt</kbd><span>+</span><kbd>W</kbd>
+              <span class="key-arrow">→</span>
+              <kbd>Ctrl</kbd><span>+</span><kbd>W</kbd>
+            </div>
+            <h3>Remapeamento visual</h3>
+            <p>Capture a origem e o destino, dê um nome à regra e revise tudo antes de salvar.</p>
+          </article>
+
+          <article class="feature feature-scope reveal delay-100">
+            <span class="feature-mark" aria-hidden="true">APP</span>
+            <h3>Uma regra para cada contexto</h3>
+            <p>Use atalhos globais, limite a aplicativos escolhidos ou crie exceções específicas.</p>
+          </article>
+
+          <article class="feature feature-pause reveal">
+            <div class="pause-control" aria-hidden="true">
+              <span>Remapeamentos ativos</span>
+              <span class="toggle"><i></i></span>
+            </div>
+            <h3>Pausa imediata</h3>
+            <p>Suspenda todas as regras de uma vez ou ative somente o que precisa naquele momento.</p>
+          </article>
+
+          <article class="feature feature-local reveal delay-100">
+            <span class="feature-mark" aria-hidden="true">{ }</span>
+            <h3>Configuração portátil</h3>
+            <p>Importe e exporte suas regras em JSON para manter uma cópia local ou migrar de PC.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="interface section-shell" id="interface" aria-labelledby="interface-title">
+        <div class="interface-copy reveal">
+          <h2 id="interface-title">Clareza antes de cada comando.</h2>
+          <p>
+            Veja regras, escopos e estados em uma única tela. Edite, duplique ou pause sem procurar
+            em arquivos de script.
+          </p>
+        </div>
+
+        <figure class="screenshot screenshot-main reveal delay-100">
+          <img
+            src="assets/dashboard.png"
+            alt="Tela principal do Shortcut Remapper Studio com três regras de atalhos"
+            width="1024"
+            height="768"
+            loading="lazy"
+          />
+        </figure>
+
+        <figure class="screenshot screenshot-editor reveal">
+          <img
+            src="assets/editor.png"
+            alt="Editor de remapeamento com origem, destino e escopo por aplicativo"
+            width="1024"
+            height="768"
+            loading="lazy"
+          />
+        </figure>
+
+        <blockquote class="interface-note reveal delay-100">
+          <p>Atalhos poderosos não precisam de uma configuração complicada.</p>
+          <footer>Capture, valide e salve em uma interface feita para Windows.</footer>
+        </blockquote>
+      </section>
+
+      <section class="privacy" id="privacidade" aria-labelledby="privacy-title">
+        <div class="privacy-inner section-shell">
+          <div class="privacy-copy reveal">
+            <h2 id="privacy-title">Local por princípio.</h2>
+            <p>
+              Suas regras ficam no computador. O app não exige conta, não coleta o que você digita
+              e não envia telemetria aos servidores da WPC Solutions.
+            </p>
+          </div>
+
+          <div class="privacy-points reveal delay-100">
+            <article>
+              <strong>Sem conta</strong>
+              <span>Abra e comece a configurar.</span>
+            </article>
+            <article>
+              <strong>Sem histórico de digitação</strong>
+              <span>Somente combinações configuradas são processadas.</span>
+            </article>
+            <article>
+              <strong>Logs desligados</strong>
+              <span>Diagnósticos locais são opcionais.</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="download section-shell" id="download">
+        <div class="download-copy reveal">
+          <img src="assets/icon.png" alt="" width="96" height="96" loading="lazy" />
+          <h2>Faça o teclado trabalhar para você.</h2>
+          <p>Disponível para Windows 10 versão 19041 ou posterior e Windows 11.</p>
+        </div>
+        <a
+          class="store-badge reveal delay-100"
+          href="https://apps.microsoft.com/detail/9nkz25gpf21l?hl=pt-BR&gl=BR"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-track="ms_store_badge"
+        >
+          <img
+            src="assets/microsoft-store.png"
+            alt="Ver na Microsoft Store"
+            width="830"
+            height="242"
+            loading="lazy"
+          />
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <a href="../index.html" class="wpc-brand">
+          <img src="../assets/WPChorizWhite.svg" alt="WPC Solutions" width="200" height="40" />
+        </a>
+        <p>&copy; 2026 WPC Solutions. Todos os direitos reservados.</p>
+        <div class="footer-links">
+          <a
+            href="https://apps.microsoft.com/detail/9nkz25gpf21l?hl=pt-BR&gl=BR"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-track="ms_store_footer"
+          >Ver na Microsoft Store</a>
+          <a href="mailto:contact@wpcsolutions.com.br">Suporte</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

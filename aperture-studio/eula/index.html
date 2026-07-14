@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="../legal.css" />
     <link rel="icon" type="image/svg+xml" href="../assets/aperture-icon.svg" />
   </head>
-  <body class="legal-document">
+  <body class="legal-document" data-i18n-page="eula" data-i18n-base="../">
     <header class="site-header">
       <nav class="navbar" aria-label="Main navigation">
         <div class="navbar-inner">
@@ -43,10 +43,11 @@
           <span></span>
         </button>
         <ul class="nav-links" id="navLinks">
-          <li><a href="../../index.html#services">Serviços</a></li>
-          <li><a href="../../index.html#about">Sobre</a></li>
-          <li><a href="../../portfolio/index.html">Portfólio</a></li>
-          <li><a href="../../index.html#contact" class="nav-cta">Fale conosco</a></li>
+          <li><a href="../../index.html#services" data-i18n="nav.services">Services</a></li>
+          <li><a href="../../index.html#about" data-i18n="nav.about">About</a></li>
+          <li><a href="../../portfolio/index.html" data-i18n="nav.portfolio">Portfolio</a></li>
+          <li class="lang-switcher-item" data-lang-switcher></li>
+          <li><a href="../../index.html#contact" class="nav-cta" data-i18n="nav.contactCta">Contact us</a></li>
         </ul>
         </div>
       </nav>
@@ -54,18 +55,18 @@
     </header>
 
     <main class="legal-page">
-      <a href="../legal/" class="legal-back">&larr; Legal</a>
+      <a href="../legal/" class="legal-back" data-i18n="legal.back">&larr; Legal</a>
 
       <header class="legal-header">
-        <h1>End-User License Agreement (EULA) — Aperture Studio AI</h1>
-        <div class="legal-meta">
+        <h1 data-i18n="eula.h1">End-User License Agreement (EULA) — Aperture Studio AI</h1>
+        <div class="legal-meta" data-i18n="eula.meta" data-i18n-html="">
           <p><strong>Last updated:</strong> July 7, 2026</p>
           <p><strong>Application:</strong> Aperture Studio AI</p>
           <p><strong>Publisher:</strong> WPC Solutions</p>
         </div>
       </header>
 
-      <article class="legal-content">
+      <article class="legal-content" data-i18n-content="eula.content">
         <h2>1. Acceptance</h2>
         <p>
           This End-User License Agreement ("Agreement") is a legal agreement between you and <strong>WPC Solutions</strong>
@@ -121,7 +122,7 @@
         <h2>5. Optional third-party services</h2>
         <p>
           The Software offers <strong>optional</strong> integrations (for example, cloud AI keywording via Google Cloud
-          Vision or Amazon Rekognition, and Google Photos import). If you enable them:
+          Vision or Amazon Rekognition, and Google Photos upload). If you enable them:
         </p>
         <ul>
           <li>you are responsible for your own accounts, API keys, and any <strong>fees</strong> those providers charge;</li>
@@ -225,40 +226,43 @@
               <img class="logo-light" src="../../assets/WPChorizDark.webp" alt="WPC Solutions" />
               <img class="logo-dark" src="../../assets/WPChorizWhite.webp" alt="" />
             </div>
-            <p>Desenvolvendo o futuro, uma linha de código por vez.</p>
+            <p data-i18n="footer.tagline">Developing the future, one line of code at a time.</p>
           </div>
           <div>
-            <h4>Empresa</h4>
+            <h4 data-i18n="footer.company">Company</h4>
             <ul>
-              <li><a href="../../index.html#about">Sobre nós</a></li>
-              <li><a href="../../index.html#services">Serviços</a></li>
-              <li><a href="../../portfolio/index.html">Portfólio</a></li>
-              <li><a href="../../index.html#contact">Contato</a></li>
+              <li><a href="../../index.html#about" data-i18n="footer.about">About us</a></li>
+              <li><a href="../../index.html#services" data-i18n="footer.services">Services</a></li>
+              <li><a href="../../portfolio/index.html" data-i18n="footer.portfolio">Portfolio</a></li>
+              <li><a href="../../index.html#contact" data-i18n="footer.contact">Contact</a></li>
             </ul>
           </div>
           <div>
-            <h4>Produtos</h4>
+            <h4 data-i18n="footer.products">Products</h4>
             <ul>
-              <li><a href="../index.html">Aperture Studio AI</a></li>
-              <li><a href="../../finalrenamer/index.html">Final Renamer</a></li>
-              <li><a href="../../ShortcutMapperStudio/index.html">Shortcut Remapper Studio</a></li>
+              <li><a href="../index.html" data-i18n="footer.aperture">Aperture Studio AI</a></li>
+              <li><a href="../../finalrenamer/index.html" data-i18n="footer.finalrenamer">Final Renamer</a></li>
+              <li><a href="../../ShortcutMapperStudio/index.html" data-i18n="footer.shortcut">Shortcut Remapper Studio</a></li>
             </ul>
           </div>
           <div>
-            <h4>Conecte-se</h4>
+            <h4 data-i18n="footer.connect">Connect</h4>
             <ul>
               <li><a href="https://github.com/carreirodev" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-              <li><a href="mailto:contact@wpcsolutions.com.br">E-mail</a></li>
+              <li><a href="mailto:contact@wpcsolutions.com.br" data-i18n="footer.email">Email</a></li>
             </ul>
           </div>
         </div>
         <div class="footer-bottom">
-          <span>&copy; 2026 WPC Solutions. Todos os direitos reservados.</span>
-          <span>Aperture Studio AI</span>
+          <span data-i18n="footer.rights">© 2026 WPC Solutions. All rights reserved.</span>
+          <span data-i18n="footer.aperture">Aperture Studio AI</span>
         </div>
       </div>
     </footer>
 
+    <script src="../i18n/shared.js"></script>
+    <script src="../i18n/eula-pt.js"></script>
+    <script src="../i18n.js"></script>
     <script src="../../main.js"></script>
   </body>
 </html>

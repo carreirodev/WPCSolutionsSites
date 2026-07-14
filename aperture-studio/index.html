@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- SEO Meta Tags -->
-    <title>Aperture Studio AI - Organize fotos e vídeos com IA local no Windows</title>
+    <title>Aperture Studio AI - Organize photos and videos with local AI on Windows</title>
     <meta
       name="description"
-      content="Catálogo local-first para Windows: organize mais de 200.000 fotos e vídeos sem mover um arquivo. IA no seu PC, reconhecimento de faces, geocodificação e busca em linguagem natural."
+      content="Local-first catalog for Windows: organize 200,000+ photos and videos without moving a file. On-device AI, face recognition, geocoding, and natural-language search."
     />
     <meta
       name="keywords"
@@ -18,21 +18,21 @@
     <link rel="canonical" href="https://wpcsolutions.com.br/aperture-studio/" />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Aperture Studio AI - Sua biblioteca inteira, organizada e privada" />
+    <meta property="og:title" content="Aperture Studio AI - Your entire library, organized and private" />
     <meta
       property="og:description"
-      content="Organize mais de 200.000 fotos e vídeos sem mover um arquivo. IA no seu PC, faces, geocodificação e busca em linguagem natural."
+      content="Organize 200,000+ photos and videos without moving a file. On-device AI, faces, geocoding, and natural-language search."
     />
     <meta property="og:image" content="https://wpcsolutions.com.br/aperture-studio/assets/aperture-icon-310.png" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://wpcsolutions.com.br/aperture-studio/" />
     <meta property="og:site_name" content="WPC Solutions" />
-    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:locale" content="en_US" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Aperture Studio AI - Organize fotos e vídeos com IA local" />
+    <meta name="twitter:title" content="Aperture Studio AI - Organize photos and videos with local AI" />
     <meta
       name="twitter:description"
-      content="Catálogo local-first para Windows com IA no seu PC: faces, geocodificação, Google Photos e busca em linguagem natural."
+      content="Local-first catalog for Windows with on-device AI: faces, geocoding, Google Photos upload, and natural-language search."
     />
     <meta name="twitter:image" content="https://wpcsolutions.com.br/aperture-studio/assets/aperture-icon-310.png" />
 
@@ -45,7 +45,7 @@
         "operatingSystem": "Windows",
         "url": "https://wpcsolutions.com.br/aperture-studio/",
         "image": "https://wpcsolutions.com.br/aperture-studio/assets/aperture-icon-310.png",
-        "description": "Suíte profissional de organização de fotos e vídeos para Windows, local-first e não destrutiva, com IA no dispositivo, reconhecimento de faces, geocodificação e busca em linguagem natural.",
+        "description": "Professional photo and video organization suite for Windows — local-first, non-destructive, with on-device AI, face recognition, geocoding, and natural-language search.",
         "downloadUrl": "https://apps.microsoft.com/detail/9P8ZB8HRMF5S",
         "publisher": {
           "@type": "Organization",
@@ -67,14 +67,14 @@
 
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body data-i18n-page="home" data-i18n-base="">
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
       <div class="navbar-inner">
         <a href="#" class="nav-brand">
           <img
             src="assets/aperture-icon.svg"
-            alt="Ícone do Aperture Studio AI"
+            alt="Aperture Studio AI icon"
             width="40"
             height="40"
             decoding="async"
@@ -86,7 +86,7 @@
           class="nav-toggle"
           id="navToggle"
           type="button"
-          aria-label="Abrir menu"
+          aria-label="Open menu"
           aria-controls="navLinks"
           aria-expanded="false"
         >
@@ -96,18 +96,20 @@
         </button>
 
         <ul class="nav-links" id="navLinks">
-          <li><a href="#recursos">Recursos</a></li>
-          <li><a href="#privacidade">Privacidade</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="../index.html">WPC Solutions</a></li>
+          <li><a href="#recursos" data-i18n="nav.features">Features</a></li>
+          <li><a href="#privacidade" data-i18n="nav.privacy">Privacy</a></li>
+          <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+          <li><a href="../index.html" data-i18n="nav.wpc">WPC Solutions</a></li>
+          <li class="lang-switcher-wrap" data-lang-switcher></li>
           <li>
             <a
-              href="https://apps.microsoft.com/detail/9P8ZB8HRMF5S?hl=pt-BR&gl=BR"
+              href="https://apps.microsoft.com/detail/9P8ZB8HRMF5S?hl=en-US&gl=US"
               class="nav-cta"
               target="_blank"
               rel="noopener noreferrer"
               data-track="ms_store_nav"
-              >Baixar na Microsoft Store</a
+              data-i18n="nav.store"
+              >Get it on Microsoft Store</a
             >
           </li>
         </ul>
@@ -120,16 +122,15 @@
       <div class="hero-glow" aria-hidden="true"></div>
       <div class="hero-inner">
         <div class="hero-copy">
-          <h1>
-            Organize <span class="grad-text">200.000 fotos</span> sem mover um arquivo.
+          <h1 data-i18n="hero.title" data-i18n-html="">
+            Organize <span class="grad-text">200,000 photos</span> without moving a file.
           </h1>
-          <p>
-            Catálogo local-first para Windows. A IA roda no seu PC: keywords
-            automáticas, pessoas agrupadas e busca em linguagem natural.
+          <p data-i18n="hero.subtitle">
+            Local-first catalog for Windows. AI runs on your PC: automatic keywords, grouped people, and natural-language search.
           </p>
           <div class="hero-actions">
             <a
-              href="https://apps.microsoft.com/detail/9P8ZB8HRMF5S?hl=pt-BR&gl=BR"
+              href="https://apps.microsoft.com/detail/9P8ZB8HRMF5S?hl=en-US&gl=US"
               class="btn btn-primary"
               target="_blank"
               rel="noopener noreferrer"
@@ -138,9 +139,9 @@
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801" />
               </svg>
-              Baixar na Microsoft Store
+              <span data-i18n="hero.store">Get it on Microsoft Store</span>
             </a>
-            <a href="#recursos" class="btn btn-ghost">Ver recursos</a>
+            <a href="#recursos" class="btn btn-ghost" data-i18n="hero.features">See features</a>
           </div>
         </div>
 
@@ -195,16 +196,16 @@
     <section class="stats reveal">
       <div class="stats-inner">
         <div class="stat">
-          <strong>200.000+</strong>
-          <span>fotos e vídeos por catálogo, em grade fluida</span>
+          <strong data-i18n="stat1.value">200.000+</strong>
+          <span data-i18n="stat1.label">photos and videos per catalog, in a fluid grid</span>
         </div>
         <div class="stat">
-          <strong>8 marcas</strong>
-          <span>de RAW suportadas, além de DNG, HEIC e vídeo</span>
+          <strong data-i18n="stat2.value">8 brands</strong>
+          <span data-i18n="stat2.label">of RAW supported, plus DNG, HEIC, and video</span>
         </div>
         <div class="stat">
-          <strong>Zero</strong>
-          <span>conta, upload obrigatório ou telemetria</span>
+          <strong data-i18n="stat3.value">Zero</strong>
+          <span data-i18n="stat3.label">account, mandatory upload, or telemetry</span>
         </div>
       </div>
     </section>
@@ -212,28 +213,27 @@
     <!-- Features bento -->
     <section class="features" id="recursos">
       <div class="section-head reveal">
-        <p class="eyebrow">Recursos</p>
-        <h2>Tudo que a sua biblioteca pede</h2>
+        <p class="eyebrow" data-i18n="features.eyebrow">Features</p>
+        <h2 data-i18n="features.title">Everything your library needs</h2>
       </div>
 
       <div class="bento">
         <!-- IA local -->
         <article class="cell cell-dark cell-ai reveal">
           <div class="ai-ring" aria-hidden="true"></div>
-          <h3>IA que roda na sua máquina</h3>
-          <p>
-            Keywords automáticas com um modelo ONNX local, acelerado pela sua
-            GPU via DirectML. Sem conta, sem upload e sem custo por imagem.
+          <h3 data-i18n="feature.ai.title">AI that runs on your machine</h3>
+          <p data-i18n="feature.ai.text">
+            Automatic keywords with a local ONNX model, accelerated by your GPU via DirectML. No account, no upload, and no per-image cost.
           </p>
           <div class="ai-demo">
-            <span class="ai-demo-label">Sugestões da IA</span>
+            <span class="ai-demo-label" data-i18n="feature.ai.label">AI suggestions</span>
             <div class="ai-chips">
-              <span class="chip">pôr do sol</span>
-              <span class="chip">praia</span>
-              <span class="chip">silhueta</span>
-              <span class="chip">verão</span>
+              <span class="chip" data-i18n="chip.sunset">sunset</span>
+              <span class="chip" data-i18n="chip.beach">beach</span>
+              <span class="chip" data-i18n="chip.silhouette">silhouette</span>
+              <span class="chip" data-i18n="chip.summer">summer</span>
             </div>
-            <span class="ai-demo-note">Você revisa e aprova antes de gravar.</span>
+            <span class="ai-demo-note" data-i18n="feature.ai.note">You review and approve before saving.</span>
           </div>
         </article>
 
@@ -250,10 +250,9 @@
             />
           </figure>
           <div class="cell-photo-body">
-            <h3>Busca em linguagem natural</h3>
-            <p>
-              Descreva o que procura, como <q>pôr do sol na praia</q>. A busca
-              semântica local encontra, sem enviar nada para fora.
+            <h3 data-i18n="feature.search.title">Natural-language search</h3>
+            <p data-i18n="feature.search.text" data-i18n-html="">
+              Describe what you are looking for, like <q>sunset at the beach</q>. Local semantic search finds it without sending anything out.
             </p>
           </div>
         </article>
@@ -265,26 +264,24 @@
             <img src="https://i.pravatar.cc/96?img=12" alt="" width="48" height="48" loading="lazy" />
             <img src="https://i.pravatar.cc/96?img=32" alt="" width="48" height="48" loading="lazy" />
           </div>
-          <h3>Reconhecimento de faces</h3>
-          <p>
-            A detecção agrupa a mesma pessoa em toda a biblioteca. Encontre
-            todo mundo em dois cliques, com revisão manual.
+          <h3 data-i18n="feature.faces.title">Face recognition</h3>
+          <p data-i18n="feature.faces.text">
+            Detection groups the same person across your library. Find everyone in two clicks, with manual review.
           </p>
         </article>
 
         <!-- Geocodificação -->
         <article class="cell cell-tint reveal">
           <div class="geo-demo" aria-hidden="true">
-            <span class="geo-coords">-29.3788, -50.8740</span>
+            <span class="geo-coords" data-i18n="feature.geo.coords">-29.3788, -50.8740</span>
             <svg class="geo-arrow" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
               <path d="M8 2v10m0 0l-4-4m4 4l4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
-            <span class="geo-place">Gramado, Rio Grande do Sul</span>
+            <span class="geo-place" data-i18n="feature.geo.place">Gramado, Rio Grande do Sul</span>
           </div>
-          <h3>Geocodificação inteligente</h3>
-          <p>
-            O GPS das suas fotos vira cidade, estado e país, com geocodificador
-            offline ou Nominatim online. Você escolhe.
+          <h3 data-i18n="feature.geo.title">Smart geocoding</h3>
+          <p data-i18n="feature.geo.text">
+            GPS from your photos becomes city, state, and country, with an offline geocoder or online Nominatim. You choose.
           </p>
         </article>
 
@@ -294,10 +291,9 @@
             <span class="chip chip-outline">Google Photos</span>
             <span class="chip chip-outline">Cloud Vision</span>
           </div>
-          <h3>Conectado ao Google, se você quiser</h3>
-          <p>
-            Exporte para o Google Photos via OAuth e use o Cloud Vision com as
-            suas próprias chaves. Tudo opcional e desligado por padrão.
+          <h3 data-i18n="feature.google.title">Connected to Google, if you want</h3>
+          <p data-i18n="feature.google.text">
+            Upload to Google Photos via OAuth and use Cloud Vision with your own API keys. Everything is optional and off by default.
           </p>
         </article>
       </div>
@@ -307,46 +303,43 @@
     <section class="privacy" id="privacidade">
       <div class="privacy-inner">
         <aside class="privacy-panel reveal" aria-label="Garantias de privacidade">
-          <h3>Catálogo <span class="grad-text-dark">.aperture</span>, no seu disco</h3>
+          <h3 data-i18n="privacy.catalog.title" data-i18n-html="">Catalog <span class="grad-text-dark">.aperture</span>, on your drive</h3>
           <ul>
             <li>
               <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Sem conta e sem login
+              <span data-i18n="privacy.li1">No account and no login</span>
             </li>
             <li>
               <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Sem telemetria e sem anúncios
+              <span data-i18n="privacy.li2">No telemetry and no ads</span>
             </li>
             <li>
               <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Originais nunca são copiados ou alterados
+              <span data-i18n="privacy.li3">Originals are never copied or altered</span>
             </li>
             <li>
               <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Nuvem somente quando você liga
+              <span data-i18n="privacy.li4">Cloud only when you turn it on</span>
             </li>
           </ul>
         </aside>
         <div class="privacy-copy reveal">
-          <h2>Privado por padrão</h2>
-          <p>
-            Tudo vive em um catálogo autocontido no seu próprio drive. O app
-            funciona como uma máscara inteligente sobre as pastas que você já
-            tem: nada é copiado, movido ou enviado.
+          <h2 data-i18n="privacy.title">Private by default</h2>
+          <p data-i18n="privacy.p1">
+            Everything lives in a self-contained catalog on your own drive. The app works as a smart overlay on the folders you already have: nothing is copied, moved, or uploaded.
           </p>
-          <p>
-            Os recursos de nuvem existem, mas são estritamente opcionais e só
-            rodam quando você os ativa, com as suas próprias credenciais.
+          <p data-i18n="privacy.p2">
+            Cloud features exist, but they are strictly optional and only run when you enable them, with your own credentials.
           </p>
-          <a href="privacy/" class="text-link">Ler a Política de Privacidade</a>
+          <a href="privacy/" class="text-link" data-i18n="privacy.link">Read the Privacy Policy</a>
         </div>
       </div>
     </section>
 
     <!-- Formats marquee -->
     <section class="formats reveal">
-      <h2>Todos os formatos que importam</h2>
-      <p>RAW de Canon, Nikon, Sony, Fujifilm, Olympus, Panasonic, Pentax e Leica, com miniaturas, metadados e reprodução de vídeo no app.</p>
+      <h2 data-i18n="formats.title">All the formats that matter</h2>
+      <p data-i18n="formats.text">RAW from Canon, Nikon, Sony, Fujifilm, Olympus, Panasonic, Pentax, and Leica, with thumbnails, metadata, and in-app video playback.</p>
       <div class="marquee" aria-hidden="true">
         <div class="marquee-track">
           <span>CR2</span><span>CR3</span><span>NEF</span><span>ARW</span><span>RAF</span><span>ORF</span><span>RW2</span><span>PEF</span><span>DNG</span><span>HEIC</span><span>JPEG</span><span>PNG</span><span>TIFF</span><span>WebP</span><span>MP4</span><span>MOV</span><span>AVI</span><span>MKV</span><span>WebM</span>
@@ -358,42 +351,31 @@
     <!-- FAQ -->
     <section class="faq" id="faq">
       <div class="section-head reveal">
-        <h2>Perguntas frequentes</h2>
+        <h2 data-i18n="faq.title">Frequently asked questions</h2>
       </div>
       <div class="faq-list">
         <details class="faq-item reveal">
-          <summary>O Aperture Studio AI move ou altera meus arquivos?</summary>
-          <div class="faq-answer">
-            Não. O catálogo é não destrutivo: aponte para as pastas que você já
-            tem e ele indexa tudo sem copiar, mover ou alterar um único
-            original. Até as edições (corte, rotação) ficam no catálogo e só
-            são aplicadas na exportação.
+          <summary data-i18n="faq.q1">Does Aperture Studio AI move or alter my files?</summary>
+          <div class="faq-answer" data-i18n="faq.a1">
+            No. The catalog is non-destructive: point it at the folders you already have and it indexes everything without copying, moving, or altering a single original. Even edits (crop, rotation) stay in the catalog and are only applied on export.
           </div>
         </details>
         <details class="faq-item reveal">
-          <summary>A IA envia minhas fotos para a nuvem?</summary>
-          <div class="faq-answer">
-            Não por padrão. Keywords, busca semântica e faces rodam com modelos
-            locais no seu PC. Google Cloud Vision e AWS Rekognition são
-            opcionais, usam as suas próprias chaves e ficam desligados até você
-            ativar.
+          <summary data-i18n="faq.q2">Does the AI send my photos to the cloud?</summary>
+          <div class="faq-answer" data-i18n="faq.a2">
+            Not by default. Keywords, semantic search, and faces run with local models on your PC. Google Cloud Vision and AWS Rekognition are optional, use your own keys, and stay off until you enable them.
           </div>
         </details>
         <details class="faq-item reveal">
-          <summary>Funciona com o RAW da minha câmera?</summary>
-          <div class="faq-answer">
-            Muito provavelmente sim: Canon, Nikon, Sony, Fujifilm, Olympus,
-            Panasonic, Pentax, Leica e DNG, além de HEIC/HEIF de iPhones,
-            JPEG, PNG, TIFF, WebP e vídeo em MP4, MOV, AVI, MKV e WebM.
+          <summary data-i18n="faq.q3">Does it work with my camera's RAW files?</summary>
+          <div class="faq-answer" data-i18n="faq.a3">
+            Very likely yes: Canon, Nikon, Sony, Fujifilm, Olympus, Panasonic, Pentax, Leica, and DNG, plus HEIC/HEIF from iPhones, JPEG, PNG, TIFF, WebP, and video in MP4, MOV, AVI, MKV, and WebM.
           </div>
         </details>
         <details class="faq-item reveal">
-          <summary>Preciso de internet para usar?</summary>
-          <div class="faq-answer">
-            Só para ativar o app e baixar as ferramentas de mídia na primeira
-            execução. O dia a dia (catálogo, IA local, busca, geocodificação
-            offline) funciona sem conexão, e o app não importa fotos de
-            serviços on-line.
+          <summary data-i18n="faq.q4">Do I need internet to use it?</summary>
+          <div class="faq-answer" data-i18n="faq.a4">
+            Only to activate the app and download media tools on first run. Day-to-day use (catalog, local AI, search, offline geocoding) works without a connection, and the app does not import photos from online services.
           </div>
         </details>
       </div>
@@ -402,13 +384,12 @@
     <!-- CTA -->
     <section class="cta" id="download">
       <div class="cta-panel reveal">
-        <h2>Pronto para reencontrar cada foto?</h2>
-        <p>
-          Baixe o Aperture Studio AI na Microsoft Store e aponte para as pastas
-          que você já tem. O resto é com a IA.
+        <h2 data-i18n="cta.title">Ready to find every photo again?</h2>
+        <p data-i18n="cta.p">
+          Download Aperture Studio AI from the Microsoft Store and point it at the folders you already have. The AI handles the rest.
         </p>
         <a
-          href="https://apps.microsoft.com/detail/9P8ZB8HRMF5S?hl=pt-BR&gl=BR"
+          href="https://apps.microsoft.com/detail/9P8ZB8HRMF5S?hl=en-US&gl=US"
           class="ms-store-badge"
           target="_blank"
           rel="noopener noreferrer"
@@ -416,16 +397,16 @@
         >
           <img
             src="assets/DFTMS.png"
-            alt="Disponível na Microsoft Store"
+            alt="Get it from Microsoft"
             width="830"
             height="242"
             loading="lazy"
             decoding="async"
           />
         </a>
-        <p class="cta-req">Windows 10 (build 19041) ou Windows 11, x64.</p>
-        <p class="cta-legal">
-          <a href="privacy/">Política de Privacidade</a> · <a href="eula/">EULA</a>
+        <p class="cta-req" data-i18n="cta.req">Windows 10 (build 19041) or Windows 11, x64.</p>
+        <p class="cta-legal" data-i18n="cta.legal" data-i18n-html="">
+          <a href="privacy/">Privacy Policy</a> · <a href="eula/">EULA</a>
         </p>
       </div>
     </section>
@@ -438,42 +419,46 @@
             <div class="footer-logo">
               <img src="../assets/WPChorizWhite.webp" alt="WPC Solutions" />
             </div>
-            <p>Desenvolvendo o futuro, uma linha de código por vez.</p>
+            <p data-i18n="footer.tagline">Developing the future, one line of code at a time.</p>
           </div>
           <div>
-            <h4>Empresa</h4>
+            <h4 data-i18n="footer.company">Company</h4>
             <ul>
-              <li><a href="../index.html#about">Sobre nós</a></li>
-              <li><a href="../index.html#services">Serviços</a></li>
-              <li><a href="../portfolio/index.html">Portfólio</a></li>
-              <li><a href="../index.html#contact">Contato</a></li>
+              <li><a href="../index.html#about" data-i18n="footer.about">About us</a></li>
+              <li><a href="../index.html#services" data-i18n="footer.services">Services</a></li>
+              <li><a href="../portfolio/index.html" data-i18n="footer.portfolio">Portfolio</a></li>
+              <li><a href="../index.html#contact" data-i18n="footer.contact">Contact</a></li>
             </ul>
           </div>
           <div>
-            <h4>Produtos</h4>
+            <h4 data-i18n="footer.products">Products</h4>
             <ul>
-              <li><a href="../finalrenamer/index.html">Final Renamer</a></li>
-              <li><a href="./">Aperture Studio AI</a></li>
+              <li><a href="../finalrenamer/index.html" data-i18n="footer.finalrenamer">Final Renamer</a></li>
+              <li><a href="./" data-i18n="footer.aperture">Aperture Studio AI</a></li>
             </ul>
           </div>
           <div>
-            <h4>Conecte-se</h4>
+            <h4 data-i18n="footer.connect">Connect</h4>
             <ul>
               <li><a href="https://github.com/carreirodev" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-              <li><a href="mailto:contact@wpcsolutions.com.br">E-mail</a></li>
+              <li><a href="mailto:contact@wpcsolutions.com.br" data-i18n="footer.email">Email</a></li>
             </ul>
           </div>
         </div>
         <div class="footer-bottom">
-          <span>&copy; 2026 WPC Solutions. Todos os direitos reservados.</span>
+          <span data-i18n="footer.rights">&copy; 2026 WPC Solutions. All rights reserved.</span>
           <span style="display:flex;align-items:center;gap:6px;">
             <span style="width:6px;height:6px;border-radius:50%;background:var(--primary-500);"></span>
-            Feito com propósito.
+            <span data-i18n="footer.purpose">Made with purpose.</span>
           </span>
         </div>
       </div>
     </footer>
 
+    <script src="i18n/shared.js"></script>
+    <script src="i18n/home-en.js"></script>
+    <script src="i18n/home-pt.js"></script>
+    <script src="i18n.js"></script>
     <script src="script.js?v=3"></script>
   </body>
 </html>

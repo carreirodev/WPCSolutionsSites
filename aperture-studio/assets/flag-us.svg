@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 16" role="img" aria-label="United States">
+  <rect width="24" height="16" fill="#b22234"/>
+  <path fill="#fff" d="M0 1.23h24M0 3.69h24M0 6.15h24M0 8.62h24M0 11.08h24M0 13.54h24"/>
+  <rect width="9.6" height="8.62" fill="#3c3b6e"/>
+  <g fill="#fff">
+    <circle cx="1.6" cy="1.4" r=".45"/><circle cx="3.2" cy="1.4" r=".45"/><circle cx="4.8" cy="1.4" r=".45"/><circle cx="6.4" cy="1.4" r=".45"/><circle cx="8" cy="1.4" r=".45"/>
+    <circle cx="2.4" cy="2.6" r=".45"/><circle cx="4" cy="2.6" r=".45"/><circle cx="5.6" cy="2.6" r=".45"/><circle cx="7.2" cy="2.6" r=".45"/>
+    <circle cx="1.6" cy="3.8" r=".45"/><circle cx="3.2" cy="3.8" r=".45"/><circle cx="4.8" cy="3.8" r=".45"/><circle cx="6.4" cy="3.8" r=".45"/><circle cx="8" cy="3.8" r=".45"/>
+    <circle cx="2.4" cy="5" r=".45"/><circle cx="4" cy="5" r=".45"/><circle cx="5.6" cy="5" r=".45"/><circle cx="7.2" cy="5" r=".45"/>
+    <circle cx="1.6" cy="6.2" r=".45"/><circle cx="3.2" cy="6.2" r=".45"/><circle cx="4.8" cy="6.2" r=".45"/><circle cx="6.4" cy="6.2" r=".45"/><circle cx="8" cy="6.2" r=".45"/>
+    <circle cx="2.4" cy="7.4" r=".45"/><circle cx="4" cy="7.4" r=".45"/><circle cx="5.6" cy="7.4" r=".45"/><circle cx="7.2" cy="7.4" r=".45"/>
+  </g>
+</svg>

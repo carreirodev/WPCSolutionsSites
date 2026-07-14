@@ -1,6 +1,6 @@
 # Privacy Policy — Aperture Studio AI
 
-**Last updated:** July 7, 2026
+**Last updated:** July 14, 2026
 **Application:** Aperture Studio AI
 **Platform:** Windows 10 / 11 (x64)
 **Publisher:** WPC Solutions
@@ -23,7 +23,7 @@ work **locally on your computer**. By default it does not require an account, do
 photos or personal data to our servers, and stores everything in a catalog on your own device.
 
 Some features are **optional and cloud-based** (for example, cloud AI keywording and Google
-Photos import). Those features only run when you explicitly enable and use them, and they are
+Photos upload). Those features only run when you explicitly enable and use them, and they are
 described in Section 5.
 
 By installing or using the app, you agree to this policy.
@@ -92,13 +92,19 @@ provider to generate keyword suggestions:
 - We do not receive these images or results; the exchange is between your app installation and the
   provider you configured.
 
-### 5.2 Google Photos import
+### 5.2 Google Photos upload
 
-If you connect Google Photos, the app uses Google's **OAuth 2.0 (PKCE)** sign-in so it can read
-media from **your own** Google account with your consent. The app never sees your Google password
-— authentication happens through Google and returns a token stored locally on your device. This
-access is governed by Google's Privacy Policy: https://policies.google.com/privacy. You can revoke
-access at any time from your Google Account's security settings.
+If you connect Google Photos, the app uses Google's **OAuth 2.0 (PKCE)** sign-in to upload photos
+you explicitly select to your Google Photos library. The app requests only the
+**photoslibrary.appendonly** scope — upload-only access. It can never read, list, modify, or delete
+anything in your Google Photos library. The app never sees your Google password; authentication
+produces a token stored locally on your device. This access is governed by Google's Privacy Policy:
+https://policies.google.com/privacy.
+
+Aperture Studio AI's use and transfer of information received from Google APIs adheres to the
+Google API Services User Data Policy
+(https://developers.google.com/terms/api-services-user-data-policy), including the Limited Use
+requirements.
 
 ### 5.3 On-device AI (not a cloud feature)
 
@@ -179,7 +185,7 @@ You are always in control of your data:
 - **Disable cloud features** at any time in Settings; the app returns to fully local operation.
 - **Remove folders** from the catalog, or **delete the entire catalog**, from within the app or by
   deleting the `.aperture` folder.
-- **Revoke Google Photos access** from your Google Account settings.
+- **Revoke Google Photos access** at https://myaccount.google.com/permissions
 - **Remove stored API keys** in the app's settings.
 - **Uninstall** the app from Windows Settings at any time.
 
